@@ -123,12 +123,12 @@ def main():
     print(F.softmax(model.alphas_reduce, dim=-1))
 
     # training
-    train_acc, train_obj = train(train_queue, valid_queue, model, architect, criterion, optimizer, lr)
-    logging.info('train_acc %f', train_acc)
+    train(train_queue, valid_queue, model, architect, criterion, optimizer, lr)
+    #logging.info('train_acc %f', train_acc)
 
     # validation
-    valid_acc, valid_obj = infer(valid_queue, model, criterion)
-    logging.info('valid_acc %f', valid_acc)
+    infer(valid_queue, model, criterion)
+    #logging.info('valid_acc %f', valid_acc)
 
     utils.save(model, os.path.join(args.save, 'weights.pt'))
 
@@ -165,13 +165,13 @@ def train(train_queue, valid_queue, model, architect, criterion, optimizer, lr):
     optimizer.step()
 
     #prec1 = utils.accuracy(logits, target)
-    objs.update(loss.data[0], n)
+    # objs.update(loss.data[0], n)
     #top1.update(prec1.data[0], n)
+    print(loss)
+    # if step % args.report_freq == 0:
+    #   logging.info('train %03d %e ', step, objs.avg)
 
-    if step % args.report_freq == 0:
-      logging.info('train %03d %e ', step, objs.avg)
-
-  return top1.avg, objs.avg
+    #return top1.avg, objs.avg
 
 
 def infer(valid_queue, model, criterion):
@@ -189,14 +189,15 @@ def infer(valid_queue, model, criterion):
 
     #prec1, prec5 = utils.accuracy(logits, target, topk=(1, 5))
     n = input.size(0)
-    objs.update(loss.data[0], n)
+    print(loss)
+    # objs.update(loss.data[0], n)
     #top1.update(prec1.data[0], n)
     # top5.update(prec5.data[0], n)
 
-    if step % args.report_freq == 0:
-      logging.info('valid %03d %e ', step, objs.avg)
+    # if step % args.report_freq == 0:
+    #   logging.info('valid %03d %e ', step, objs.avg)
 
-  return top1.avg, objs.avg
+    # return top1.avg, objs.avg
 
 
 if __name__ == '__main__':
