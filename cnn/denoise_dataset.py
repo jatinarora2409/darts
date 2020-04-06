@@ -29,11 +29,8 @@ class DENOISE_DATASET(VisionDataset):
         for train_file,test_file in zip(train_files,label_files):
             train_img = cv2.imread(train_file)
             test_img = cv2.imread(test_file)
-            train_arr = np.array(train_img)
-            print(train_arr.shape)
-            test_arr = np.array(test_img)
-            self.data.append(train_arr)
-            self.targets.append(test_arr)
+            self.data.append(train_img)
+            self.targets.append(test_img)
 
     def __getitem__(self, index):
         """
