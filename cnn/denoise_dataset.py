@@ -27,8 +27,9 @@ class DENOISE_DATASET(VisionDataset):
 
         # now load the picked numpy arrays
         for train_file,test_file in zip(train_files,label_files):
-            train_img = cv2.imread(train_file)
-            test_img = cv2.imread(test_file)
+            train_img = Image.open(train_file).convert('RGB')
+            test_img = Image.open(test_file).convert('RGB')
+            print(train_img.size)
             self.data.append(train_img)
             self.targets.append(test_img)
 
