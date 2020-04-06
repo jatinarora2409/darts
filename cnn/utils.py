@@ -60,7 +60,7 @@ class Cutout(object):
 
 def _data_trainsforms_denosining_dataset(args):
     train_transform = transforms.Compose([
-        transforms.CenterCrop(32, padding=4),
+        transforms.CenterCrop(32),
         transforms.ToTensor(),
     ])
 
@@ -68,7 +68,7 @@ def _data_trainsforms_denosining_dataset(args):
         train_transform.transforms.append(Cutout(args.cutout_length))
 
     valid_transform = transforms.Compose([
-        transforms.CenterCrop(32, padding=4),
+        transforms.CenterCrop(32),
         transforms.ToTensor(),
     ])
     return train_transform, valid_transform
