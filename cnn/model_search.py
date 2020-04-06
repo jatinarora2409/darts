@@ -90,7 +90,7 @@ class Network(nn.Module):
       reduction_prev = reduction
       self.cells += [cell]
       C_prev_prev, C_prev = C_prev, multiplier*C_curr
-    self.global_pooling = nn.AdaptiveAvgPool2d((output_height,output_width))
+    self.global_pooling = nn.AdaptiveAvgPool3d((3,output_height,output_width))
     self._initialize_alphas()
 
   def new(self):
