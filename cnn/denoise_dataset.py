@@ -16,8 +16,8 @@ class DENOISE_DATASET(VisionDataset):
         self.data = []
         self.targets = []
 
-        train_files = [f for f in listdir(train_folder) if isfile(join(train_folder, f))]
-        label_files = [f for f in listdir(label_folder) if isfile(join(label_folder, f))]
+        train_files = [join(train_folder,f) for f in listdir(train_folder) if isfile(join(train_folder, f))]
+        label_files = [join(label_folder,f) for f in listdir(label_folder) if isfile(join(label_folder, f))]
         train_files.sort()
         label_files.sort()
 
