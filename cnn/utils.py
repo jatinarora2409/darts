@@ -58,6 +58,20 @@ class Cutout(object):
         img *= mask
         return img
 
+def _data_trainsforms_denosining_dataset(args):
+    train_transform = transforms.Compose([
+        transforms.RandomCrop(32, padding=4),
+        transforms.RandomHorizontalFlip(),
+        transforms.ToTensor(),
+    ])
+
+    if args.cutout:
+        train_transform.transforms.append(Cutout(args.cutout_length))
+
+    valid_transform = transforms.Compose([
+        transforms.ToTensor(),
+    ])
+    return train_transform, valid_transform
 
 def _data_transforms_cifar10(args):
   CIFAR_MEAN = [0.49139968, 0.48215827, 0.44653124]

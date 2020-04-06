@@ -60,7 +60,7 @@ class Cell(nn.Module):
 
 class Network(nn.Module):
 
-  def __init__(self, C, num_classes, layers, criterion, steps=4, multiplier=4, stem_multiplier=3):
+  def __init__(self, C, num_classes, layers, criterion, steps=4, multiplier=4, stem_multiplier=3,output_height=300,output_width=300):
     super(Network, self).__init__()
     self._C = C
     self._num_classes = num_classes
@@ -88,10 +88,7 @@ class Network(nn.Module):
       reduction_prev = reduction
       self.cells += [cell]
       C_prev_prev, C_prev = C_prev, multiplier*C_curr
-
-    self.global_pooling = nn.AdaptiveAvgPool2d(1)
-    self.classifier = nn.Linear(C_prev, num_classes)
-
+    self.global_pooling = nn.AdaptiveAvgPool2d((output_height,output_width))
     self._initialize_alphas()
 
   def new(self):
@@ -108,9 +105,8 @@ class Network(nn.Module):
       else:
         weights = F.softmax(self.alphas_normal, dim=-1)
       s0, s1 = s1, cell(s0, s1, weights)
-    out = self.global_pooling(s1)
-    logits = self.classifier(out.view(out.size(0),-1))
-    return logits
+    out_img = self.global_pooling(s1)
+    return out_img
 
   def _loss(self, input, target):
     logits = self(input)
