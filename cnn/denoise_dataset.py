@@ -26,9 +26,10 @@ class DENOISE_DATASET(VisionDataset):
 
         # now load the picked numpy arrays
         for train_file,test_file in zip(train_files,label_files):
-            train_img = Image.open(train_file).convert('RGBA')
-            test_img = Image.open(test_file).convert('RGBA')
+            train_img = Image.open(train_file).convert('RGB')
+            test_img = Image.open(test_file).convert('RGB')
             train_arr = np.array(train_img)
+            #print(train_arr.shape)
             test_arr = np.array(test_img)
             self.data.append(train_arr)
             self.targets.append(test_arr)
@@ -46,7 +47,6 @@ class DENOISE_DATASET(VisionDataset):
         # doing this so that it is consistent with all other datasets
         # to return a PIL Image
         img = Image.fromarray(img)
-
         if self.transform is not None:
             img = self.transform(img)
 
