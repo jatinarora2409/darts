@@ -87,7 +87,7 @@ def main():
       weight_decay=args.weight_decay)
 
   train_transform, valid_transform = utils._data_trainsforms_denosining_dataset(args)
-  train_data = DENOISE_DATASET(root=args.data,train_folder=args.train_data,label_folder=args.label_data,train=True, transform=train_transform )
+  train_data = DENOISE_DATASET(root=args.data,train_folder=args.train_data,label_folder=args.label_data,train=True, transform=train_transform,target_transform=train_transform )
   #train_data = dset.CIFAR10(root=args.data, train=True, download=True, transform=train_transform)
 
   num_train = len(train_data)
