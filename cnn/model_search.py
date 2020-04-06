@@ -68,6 +68,8 @@ class Network(nn.Module):
     self._criterion = criterion
     self._steps = steps
     self._multiplier = multiplier
+    self._output_height= output_height
+    self._output_width = output_width
 
     C_curr = stem_multiplier*C
     self.stem = nn.Sequential(
@@ -92,7 +94,7 @@ class Network(nn.Module):
     self._initialize_alphas()
 
   def new(self):
-    model_new = Network(self._C, self._num_classes, self._layers, self._criterion).cuda()
+    model_new = Network(self._C, self._num_classes, self._layers, self._criterion,output_height=self._output_height,output_width=self._output_width).cuda()
     for x, y in zip(model_new.arch_parameters(), self.arch_parameters()):
         x.data.copy_(y.data)
     return model_new
