@@ -7,7 +7,7 @@ from os import listdir
 from os.path import isfile, join
 
 class DENOISE_DATASET(VisionDataset):
-    def __init__(self, root, train_folder,test_folder,train=True, transform=None, target_transform=None):
+    def __init__(self, root, train_folder,label_folder,train=True, transform=None, target_transform=None):
 
         super(DENOISE_DATASET, self).__init__(root, transform=transform,
                                       target_transform=target_transform)
@@ -17,15 +17,15 @@ class DENOISE_DATASET(VisionDataset):
         self.targets = []
 
         train_files = [f for f in listdir(train_folder) if isfile(join(train_folder, f))]
-        test_files = [f for f in listdir(test_folder) if isfile(join(test_folder, f))]
+        label_files = [f for f in listdir(label_folder) if isfile(join(label_folder, f))]
         train_files.sort()
-        test_files.sort()
+        label_files.sort()
 
-        if(len(train_files) != len(test_files)):
+        if(len(train_files) != len(label_files)):
                 sys.exit(-1)
 
         # now load the picked numpy arrays
-        for train_file,test_file in zip(train_files,test_files):
+        for train_file,test_file in zip(train_files,label_files):
             train_img = Image.open(train_file).convert('RGBA')
             test_img = Image.open(test_file).convert('RGBA')
             train_arr = np.array(train_img)

@@ -22,7 +22,7 @@ from architect import Architect
 parser = argparse.ArgumentParser("cifar")
 parser.add_argument('--data', type=str, default='../data', help='location of the data corpus')
 parser.add_argument('--train_data', type=str, default='../data/train_data/', help='location of the train_data corpus')
-parser.add_argument('--test_data', type=str, default='../data/test_data/', help='location of the test_data corpus')
+parser.add_argument('--label_data', type=str, default='../data/label_data/', help='location of the test_data corpus')
 parser.add_argument('--batch_size', type=int, default=64, help='batch size')
 parser.add_argument('--learning_rate', type=float, default=0.025, help='init learning rate')
 parser.add_argument('--learning_rate_min', type=float, default=0.001, help='min learning rate')
@@ -87,7 +87,7 @@ def main():
       weight_decay=args.weight_decay)
 
   train_transform, valid_transform = utils._data_trainsforms_denosining_dataset(args)
-  train_data = DENOISE_DATASET(root=args.data,train_folder=args.train_data,test_folder=args.test_data,train=True, transform=train_transform )
+  train_data = DENOISE_DATASET(root=args.data,train_folder=args.train_data,label_folder=args.label_data,train=True, transform=train_transform )
   #train_data = dset.CIFAR10(root=args.data, train=True, download=True, transform=train_transform)
 
   num_train = len(train_data)
