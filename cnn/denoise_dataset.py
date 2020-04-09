@@ -6,6 +6,7 @@ from os import listdir
 from os.path import isfile, join
 from torchvision.datasets import VisionDataset
 import cv2
+import torchvision.transforms as transforms
 
 class DENOISE_DATASET(VisionDataset):
     def __init__(self, root, train_folder,label_folder,train=True, transform=None, target_transform=None):
@@ -25,10 +26,16 @@ class DENOISE_DATASET(VisionDataset):
         if(len(train_files) != len(label_files)):
                 sys.exit(-1)
 
+        train_transform = transforms.Compose([
+            transforms.CenterCrop(32),
+        ])
+
         # now load the picked numpy arrays
         for train_file,test_file in zip(train_files,label_files):
             train_img = Image.open(train_file).convert('RGB')
             test_img = Image.open(test_file).convert('RGB')
+            train_img = train_transform(train_img)
+            test_img = train_transform(test_img)
             print(train_img.size)
             self.data.append(train_img)
             self.targets.append(test_img)
