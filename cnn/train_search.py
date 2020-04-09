@@ -189,7 +189,7 @@ def infer(valid_queue, model, criterion):
 
     #prec1, prec5 = utils.accuracy(logits, target, topk=(1, 5))
     n = input.size(0)
-    print(loss)
+    print(loss.data)
     # objs.update(loss.data[0], n)
     #top1.update(prec1.data[0], n)
     # top5.update(prec5.data[0], n)
