@@ -164,6 +164,14 @@ def train(train_queue, valid_queue, model, architect, criterion, optimizer, lr):
     nn.utils.clip_grad_norm(model.parameters(), args.grad_clip)
     optimizer.step()
 
+
+
+    del input
+    del target
+    del input_search
+    del target_search
+    torch.cuda.empty_cache()
+
     #prec1 = utils.accuracy(logits, target)
     # objs.update(loss.data[0], n)
     #top1.update(prec1.data[0], n)
@@ -186,10 +194,14 @@ def infer(valid_queue, model, criterion):
 
     logits = model(input)
     loss = criterion(logits, target)
+    print(loss.data)
+    del  input
+    del target
+    torch.cuda.empty_cache()
 
     #prec1, prec5 = utils.accuracy(logits, target, topk=(1, 5))
-    n = input.size(0)
-    print(loss.data)
+    # n = input.size(0)
+
     # objs.update(loss.data[0], n)
     #top1.update(prec1.data[0], n)
     # top5.update(prec5.data[0], n)
