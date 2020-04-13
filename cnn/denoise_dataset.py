@@ -26,19 +26,10 @@ class DENOISE_DATASET(VisionDataset):
         if(len(train_files) != len(label_files)):
                 sys.exit(-1)
 
-        train_transform = transforms.Compose([
-            transforms.CenterCrop(32),
-        ])
-
         # now load the picked numpy arrays
         for train_file,test_file in zip(train_files,label_files):
-            train_img = Image.open(train_file).convert('RGB')
-            test_img = Image.open(test_file).convert('RGB')
-            train_img = train_transform(train_img)
-            test_img = train_transform(test_img)
-            print(train_img.size)
-            self.data.append(train_img)
-            self.targets.append(test_img)
+            self.data.append(train_file)
+            self.targets.append(test_file)
 
     def __getitem__(self, index):
         """
@@ -48,8 +39,9 @@ class DENOISE_DATASET(VisionDataset):
         Returns:
             tuple: (image, target) where target is index of the target class.
         """
-        img, target = self.data[index], self.targets[index]
-
+        train_file, test_file = self.data[index], self.targets[index]
+        img = Image.open(train_file).convert('RGB')
+        target = Image.open(test_file).convert('RGB')
         # doing this so that it is consistent with all other datasets
         # to return a PIL Image
         if self.transform is not None:
