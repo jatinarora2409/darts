@@ -8,6 +8,7 @@ rankdir=LR
 	1 [fillcolor=lightblue]
 	2 [fillcolor=lightblue]
 	3 [fillcolor=lightblue]
+<<<<<<< HEAD
 	"c_{k-1}" -> 0 [label=sep_conv_3x3 fillcolor=gray]
 	"c_{k-2}" -> 0 [label=dil_conv_3x3 fillcolor=gray]
 	"c_{k-2}" -> 1 [label=sep_conv_3x3 fillcolor=gray]
