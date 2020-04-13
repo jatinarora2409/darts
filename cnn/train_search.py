@@ -25,7 +25,7 @@ parser.add_argument('--train_data', type=str, default='../data/train_data/', hel
 parser.add_argument('--label_data', type=str, default='../data/label_data/', help='location of the test_data corpus')
 parser.add_argument('--img_cropped_height', type=int, default=32, help='img cropped height')
 parser.add_argument('--img_cropped_width', type=int, default=32, help='img cropped width')
-parser.add_argument('--batch_size', type=int, default=64, help='batch size')
+parser.add_argument('--batch_size', type=int, default=32, help='batch size')
 parser.add_argument('--learning_rate', type=float, default=0.025, help='init learning rate')
 parser.add_argument('--learning_rate_min', type=float, default=0.001, help='min learning rate')
 parser.add_argument('--momentum', type=float, default=0.9, help='momentum')
