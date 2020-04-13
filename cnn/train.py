@@ -139,7 +139,7 @@ def train(train_queue, model, criterion, optimizer):
     #prec1, prec5 = utils.accuracy(logits, target, topk=(1, 5))
     n = input.size(0)
     print("Input Size: "+str(n))
-    objs.update(loss.data[0], n)
+    objs.update(loss.data, n)
 
     # if step % args.report_freq == 0:
     #   logging.info('train %03d %e %f %f', step, objs.avg, top1.avg, top5.avg)
