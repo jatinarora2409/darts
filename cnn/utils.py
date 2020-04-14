@@ -60,7 +60,7 @@ class Cutout(object):
 
 def _data_trainsforms_denosining_dataset(args):
     train_transform = transforms.Compose([
-        transforms.CenterCrop(32),
+        transforms.CenterCrop(args.img_cropped_height),
         transforms.ToTensor(),
     ])
 
