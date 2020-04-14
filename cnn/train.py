@@ -19,7 +19,7 @@ from denoise_dataset import DENOISE_DATASET
 
 
 parser = argparse.ArgumentParser("cifar")
-parser.add_argument('--data', type=str, default='../data', help='location of the data corpus')
+parser.add_argument('--data', type=str, default='../data/mnt/d/SIDD_Medium_Srgb/Data', help='location of the data corpus')
 parser.add_argument('--train_data', type=str, default='../data/train_data/', help='location of the train_data corpus')
 parser.add_argument('--label_data', type=str, default='../data/label_data/', help='location of the test_data corpus')
 parser.add_argument('--img_cropped_height', type=int, default=32, help='img cropped height')
