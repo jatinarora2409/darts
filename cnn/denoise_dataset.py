@@ -23,12 +23,12 @@ class DENOISE_DATASET(VisionDataset):
                 if("NOISY" in filename):
                     continue
                 filename_NOISY=filename.replace("GT","NOISY",1)
-                train_file = os.path.join(root, filename)
-                test_file = os.path.join(root,filename_NOISY)
-                print("train_file: "+train_file)
-                print("label_file: "+test_file)
-                self.data.append(train_file)
-                self.targets.append(test_file)
+                label_file = os.path.join(root, filename)
+                input_file = os.path.join(root,filename_NOISY)
+                print("train_file: "+input_file)
+                print("label_file: "+label_file)
+                self.data.append(input_file)
+                self.targets.append(label_file)
 
         # train_files = [join(train_folder,f) for f in listdir(train_folder) if isfile(join(train_folder, f))]
         # label_files = [join(label_folder,f) for f in listdir(label_folder) if isfile(join(label_folder, f))]
