@@ -17,19 +17,31 @@ class DENOISE_DATASET(VisionDataset):
         self.train = train  # training set or test set
         self.data = []
         self.targets = []
+        count = 0
+        for root, directories, filenames in os.walk(root):
+            for filename in filenames:
+                if("NOISY" in filename):
+                    continue
+                filename_NOISY=filename.replace("GT","NOISY",1)
+                train_file = os.path.join(root, filename)
+                test_file = os.path.join(root,filename_NOISY)
+                print("train_file: "+train_file)
+                print("label_file: "+test_file)
+                self.data.append(train_file)
+                self.targets.append(test_file)
 
-        train_files = [join(train_folder,f) for f in listdir(train_folder) if isfile(join(train_folder, f))]
-        label_files = [join(label_folder,f) for f in listdir(label_folder) if isfile(join(label_folder, f))]
-        train_files.sort()
-        label_files.sort()
+        # train_files = [join(train_folder,f) for f in listdir(train_folder) if isfile(join(train_folder, f))]
+        # label_files = [join(label_folder,f) for f in listdir(label_folder) if isfile(join(label_folder, f))]
+        # train_files.sort()
+        # label_files.sort()
 
-        if(len(train_files) != len(label_files)):
-                sys.exit(-1)
+        # if(len(train_files) != len(label_files)):
+        #         sys.exit(-1)
 
         # now load the picked numpy arrays
-        for train_file,test_file in zip(train_files,label_files):
-            self.data.append(train_file)
-            self.targets.append(test_file)
+        # for train_file,test_file in zip(train_files,label_files):
+        #     self.data.append(train_file)
+        #     self.targets.append(test_file)
 
     def __getitem__(self, index):
         """
