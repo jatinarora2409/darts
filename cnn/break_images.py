@@ -10,7 +10,7 @@ import cv2
 import torchvision.transforms as transforms
 
 break_height_width = 32
-jump = 512+256+128
+jump = 1024+512
 root_main='../data/mnt/d/SIDD_Medium_Srgb/Data/'
 for root, directories, filenames in os.walk(root_main):
     for filename in filenames:
