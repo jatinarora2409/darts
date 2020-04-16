@@ -115,7 +115,7 @@ def main():
     valid_obj = infer(valid_queue, model, criterion)
     logging.info('valid_obj %f', valid_obj)
 
-    utils.save(model, os.path.join(args.save, 'weights.pt'))
+    utils.save(model, os.path.join(args.save, './weights.pt'))
 
 
 def train(train_queue, model, criterion, optimizer):
