@@ -10,7 +10,7 @@ import cv2
 import torchvision.transforms as transforms
 
 break_height_width = 32
-jump = 512
+jump = 300
 root_main='../data/mnt/d/SIDD_Medium_Srgb/Data/'
 for root, directories, filenames in os.walk(root_main):
     for filename in filenames:
@@ -25,8 +25,8 @@ for root, directories, filenames in os.walk(root_main):
         img = Image.open(input_file).convert('RGB')
         target = Image.open(label_file).convert('RGB')
         width, height = img.size
-        current_start_height = 0
-        current_start_width = 0
+        current_start_height = 20
+        current_start_width = 20
         count = 1
         while(current_start_height+jump<height):
             while(current_start_width+jump<width):
@@ -54,6 +54,6 @@ for root, directories, filenames in os.walk(root_main):
                 current_start_width = current_start_width+jump
 
             current_start_height = current_start_height+jump
-            current_start_width=0
+            current_start_width=20
         os.remove(label_file)
         os.remove(input_file)
