@@ -104,5 +104,5 @@ def infer(test_queue, model, criterion):
 
 
 if __name__ == '__main__':
-  main() 
+  run_test()
 
