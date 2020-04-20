@@ -25,7 +25,7 @@ use_cuda = not args.no_cuda and torch.cuda.is_available()
 # utils.load(model, args.model_path)
 # model = torch.load(args.model)
 print('accuracy before weight sharing')
-model = test.run_test(args.model_path)
+model = test.run_test(args.model)
 
 # Weight sharing
 apply_weight_sharing(model)

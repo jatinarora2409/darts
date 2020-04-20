@@ -18,6 +18,8 @@ from denoise_dataset import DENOISE_DATASET
 
 parser = argparse.ArgumentParser("cifar")
 parser.add_argument('--data', type=str, default='../data/mnt/d/SIDD_Medium_Srgb/Data', help='location of the data corpus')
+parser.add_argument('--img_cropped_height', type=int, default=32, help='img cropped height')
+parser.add_argument('--img_cropped_width', type=int, default=32, help='img cropped width')
 parser.add_argument('--batch_size', type=int, default=96, help='batch size')
 parser.add_argument('--report_freq', type=float, default=50, help='report frequency')
 parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
@@ -105,5 +107,5 @@ def infer(test_queue, model, criterion):
 
 
 if __name__ == '__main__':
-  main() 
+  run_test()
 
