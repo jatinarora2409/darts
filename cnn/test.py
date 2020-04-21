@@ -78,34 +78,39 @@ def run_test(model_data):
       test_data, batch_size=args.batch_size, shuffle=True, pin_memory=True, num_workers=2)
 
   model.drop_path_prob = args.drop_path_prob
-  test_acc, test_obj = infer(test_queue, model, criterion)
+  test_acc, _ = infer(test_queue, model, criterion)
   logging.info('test_acc %f', test_acc)
 
   return model
 
 def infer(test_queue, model, criterion):
   objs = utils.AvgrageMeter()
-  top1 = utils.AvgrageMeter()
-  top5 = utils.AvgrageMeter()
   model.eval()
 
   for step, (input, target) in enumerate(test_queue):
     input = Variable(input, volatile=True).cuda()
     target = Variable(target, volatile=True).cuda()
 
-    logits, _ = model(input)
+    logits, logits_aux = model(input)
     loss = criterion(logits, target)
 
-    prec1, prec5 = utils.accuracy(logits, target, topk=(1, 5))
+    # prec1, prec5 = utils.accuracy(logits, target, topk=(1, 5))
+    # n = input.size(0)
+    # objs.update(loss.data[0], n)
+    # top1.update(prec1.data[0], n)
+    # top5.update(prec5.data[0], n)
+    
+    if args.auxiliary:
+      loss_aux = criterion(logits_aux, target)
+      loss += args.auxiliary_weight*loss_aux
+
     n = input.size(0)
-    objs.update(loss.data[0], n)
-    top1.update(prec1.data[0], n)
-    top5.update(prec5.data[0], n)
+    objs.update(loss.data, n)
 
     if step % args.report_freq == 0:
-      logging.info('test %03d %e %f %f', step, objs.avg, top1.avg, top5.avg)
+      logging.info('test %03d %e', step, objs.avg)
 
-  return top1.avg, objs.avg
+  return objs.avg
 
 
 if __name__ == '__main__':
