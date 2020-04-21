@@ -39,7 +39,7 @@ logging.basicConfig(stream=sys.stdout, level=logging.INFO,
 CIFAR_CLASSES = 10
 
 
-def run_test(model):
+def run_test(model_data):
   if not torch.cuda.is_available():
     logging.info('no gpu device available')
     sys.exit(1)
@@ -55,9 +55,9 @@ def run_test(model):
 
   genotype = eval("genotypes.%s" % args.arch)
 
-  # model = Network(args.init_channels, 10, args.layers, args.auxiliary, genotype,output_height=args.img_cropped_height,output_width=args.img_cropped_width)
-  # model = model.cuda()
-  # utils.load(model, args.model_path)
+  model = Network(args.init_channels, 10, args.layers, args.auxiliary, genotype,output_height=args.img_cropped_height,output_width=args.img_cropped_width)
+  model = model.cuda()
+  utils.load(model, model_data)
 
   logging.info("param size = %fMB", utils.count_parameters_in_MB(model))
 
@@ -77,6 +77,7 @@ def run_test(model):
   test_acc, test_obj = infer(test_queue, model, criterion)
   logging.info('test_acc %f', test_acc)
 
+  return model
 
 def infer(test_queue, model, criterion):
   objs = utils.AvgrageMeter()
