@@ -22,7 +22,7 @@ parser.add_argument('--train_data', type=str, default='../data/train_data/', hel
 parser.add_argument('--label_data', type=str, default='../data/label_data/', help='location of the test_data corpus')
 parser.add_argument('--img_cropped_height', type=int, default=32, help='img cropped height')
 parser.add_argument('--img_cropped_width', type=int, default=32, help='img cropped width')
-parser.add_argument('--batch_size', type=int, default=96, help='batch size')
+parser.add_argument('--batch_size', type=int, default=32, help='batch size')
 parser.add_argument('--report_freq', type=float, default=50, help='report frequency')
 parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
 parser.add_argument('--init_channels', type=int, default=36, help='num of init channels')
@@ -78,10 +78,11 @@ def run_test(model_data):
       test_data, batch_size=args.batch_size, shuffle=True, pin_memory=True, num_workers=2)
 
   model.drop_path_prob = args.drop_path_prob
-  test_acc, _ = infer(test_queue, model, criterion)
-  logging.info('test_acc %f', test_acc)
-
-  return model
+  try:
+    test_acc, _ = infer(test_queue, model, criterion)
+    logging.info('test_acc %f', test_acc)
+  finally:
+    return model
 
 def infer(test_queue, model, criterion):
   objs = utils.AvgrageMeter()
