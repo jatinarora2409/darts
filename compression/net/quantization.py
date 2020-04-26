@@ -11,14 +11,16 @@ def apply_weight_sharing(model, bits=2):
     """
     Applies weight sharing to the given model
     """
+    flag = False
     for modules in model.children():
-        if not isinstance(modules, nn.AdaptiveAvgPool3d):
+        if not isinstance(modules, nn.AdaptiveAvgPool3d) and not flag:
             for module in modules:
                 if not isinstance(module, Cell):
                     dev = module.weight.device
                     weight = module.weight.data.cpu().numpy()
                     shape = weight.shape
-                    result = np.zeros(shape=shape)
+                    result = weight.copy()
+                    flag = True
                     if len(shape) > 2:
                         for i in range(shape[0]):
                             for j in range(shape[1]):
@@ -34,31 +36,32 @@ def apply_weight_sharing(model, bits=2):
                                 mat.data = new_weight
                                 result[i][j] = mat.toarray()
 
-                        module.weight.data = torch.from_numpy(result).to(dev)
+                        module.weight.data = torch.from_numpy(result.data).to(dev)
                 else:
-                    for cell_module in module.children():
-                        if isinstance(cell_module, ReLUConvBN):
-                            for ReLU_List in cell_module.children():
-                                for ReLU_module in ReLU_List:
-                                    if isinstance(ReLU_module, nn.Conv2d):
-                                        dev = ReLU_module.weight.device
-                                        weight = ReLU_module.weight.data.cpu().numpy()
-                                        shape = weight.shape
-                                        result = np.zeros(shape=shape)
-                                        if len(shape) > 2:
-                                            for i in range(shape[0]):
-                                                for j in range(shape[1]):
-                                                    wt = weight[i][j]
-                                                    mat = csr_matrix(wt) if wt.shape[0] < wt.shape[1] else csc_matrix(wt)
-                                                    min_ = min(mat.data)
-                                                    max_ = max(mat.data)
-                                                    space = np.linspace(min_, max_, num=1)
-                                                    kmeans = KMeans(n_clusters=len(space), init=space.reshape(-1, 1),
-                                                                    n_init=1,
-                                                                    precompute_distances=True, algorithm="full")
-                                                    kmeans.fit(mat.data.reshape(-1, 1))
-                                                    new_weight = kmeans.cluster_centers_[kmeans.labels_].reshape(-1)
-                                                    mat.data = new_weight
-                                                    result[i][j] = mat.toarray()
+                    print(module)
+                    # for cell_module in module.children():
+                    #     if isinstance(cell_module, ReLUConvBN):
+                    #         for ReLU_List in cell_module.children():
+                    #             for ReLU_module in ReLU_List:
+                    #                 if isinstance(ReLU_module, nn.Conv2d):
+                    #                     dev = ReLU_module.weight.device
+                    #                     weight = ReLU_module.weight.data.cpu().numpy()
+                    #                     shape = weight.shape
+                    #                     result = np.zeros(shape=shape)
+                    #                     if len(shape) > 2:
+                    #                         for i in range(shape[0]):
+                    #                             for j in range(shape[1]):
+                    #                                 wt = weight[i][j]
+                    #                                 mat = csr_matrix(wt) if wt.shape[0] < wt.shape[1] else csc_matrix(wt)
+                    #                                 min_ = min(mat.data)
+                    #                                 max_ = max(mat.data)
+                    #                                 space = np.linspace(min_, max_, num=1)
+                    #                                 kmeans = KMeans(n_clusters=len(space), init=space.reshape(-1, 1),
+                    #                                                 n_init=1,
+                    #                                                 precompute_distances=True, algorithm="full")
+                    #                                 kmeans.fit(mat.data.reshape(-1, 1))
+                    #                                 new_weight = kmeans.cluster_centers_[kmeans.labels_].reshape(-1)
+                    #                                 mat.data = new_weight
+                    #                                 result[i][j] = mat.toarray()
 
-                                            ReLU_module.weight.data = torch.from_numpy(result).to(dev)
+                    #                         ReLU_module.weight.data = torch.from_numpy(result).to(dev)
