@@ -30,10 +30,8 @@ model = test.run_test(args.model)
 # Weight sharing
 apply_weight_sharing(model)
 os.makedirs('saves', exist_ok=True)
-torch.save(model, args.output)
+torch.save(model.state_dict(), args.output)
 
 print('accuacy after weight sharing')
 test.run_test(args.output)
-
-# Save the new model
 
