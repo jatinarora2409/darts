@@ -77,7 +77,7 @@ def main():
       test_data, batch_size=args.batch_size, shuffle=False, pin_memory=True, num_workers=2)
 
   model.drop_path_prob = args.drop_path_prob
-  test_acc, test_obj = infer(test_queue, model, criterion)
+  test_acc = infer(test_queue, model, criterion)
   logging.info('test_acc %f', test_acc)
 
 
@@ -89,6 +89,7 @@ def infer(test_queue, model, criterion):
     input = Variable(input, volatile=True).cuda()
     target = Variable(target, volatile=True).cuda(async=True)
     logits, _ = model(input)
+
     loss = criterion(logits, target)
     n = input.size(0)
     objs.update(loss.data, n)
