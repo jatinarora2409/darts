@@ -62,7 +62,10 @@ class DENOISE_DATASET(VisionDataset):
 
         if self.target_transform is not None:
             target = self.target_transform(target)
-
+        print("Img Shape")
+        print(img.shape)
+        print("Target Shape")
+        print(target.shape)
         return img, target
 
     def __len__(self):
