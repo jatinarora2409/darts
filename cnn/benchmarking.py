@@ -90,8 +90,14 @@ def infer(test_queue, model, criterion):
   for step, (input, target) in enumerate(test_queue):
     input = Variable(input, volatile=True).cuda()
     target = Variable(target, volatile=True).cuda(async=True)
+    print("Input Length: ")
+    print(len(input))
+
+    print("target Shape")
+    print(len(input))
 
     logits, _ = model(input)
+    print("logits Shape")
     print(len(logits))
     loss = criterion(logits, target)
 
