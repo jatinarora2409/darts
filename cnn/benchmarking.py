@@ -91,14 +91,14 @@ def infer(test_queue, model, criterion):
     input = Variable(input, volatile=True).cuda()
     target = Variable(target, volatile=True).cuda(async=True)
     print("Input Length: ")
-    print(len(input))
+    print(input.shape)
 
     print("target Shape")
-    print(len(input))
+    print(input.shape)
 
     logits, _ = model(input)
     print("logits Shape")
-    print(len(logits))
+    print(logits.shape)
     loss = criterion(logits, target)
 
     prec1, prec5 = utils.accuracy(logits, target, topk=(1, 5))
