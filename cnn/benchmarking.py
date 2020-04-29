@@ -59,7 +59,7 @@ def main():
   logging.info("args = %s", args)
 
   genotype = eval("genotypes.%s" % args.arch)
-  model = Network(args.init_channels, CIFAR_CLASSES, args.layers, args.auxiliary, genotype)
+  model = Network(args.init_channels, CIFAR_CLASSES, args.layers, args.auxiliary, genotype,output_height=args.img_cropped_height,output_width=args.img_cropped_width)
   model = model.cuda()
   utils.load(model, args.model_path)
   logging.info("param size = %fMB", utils.count_parameters_in_MB(model))
