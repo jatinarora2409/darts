@@ -23,7 +23,7 @@ parser.add_argument('--img_cropped_height', type=int, default=32, help='img crop
 parser.add_argument('--img_cropped_width', type=int, default=32, help='img cropped width')
 parser.add_argument('--train_data', type=str, default='../data/train_data/', help='location of the train_data corpus')
 parser.add_argument('--label_data', type=str, default='../data/label_data/', help='location of the test_data corpus')
-parser.add_argument('--batch_size', type=int, default=96, help='batch size')
+parser.add_argument('--batch_size', type=int, default=32, help='batch size')
 parser.add_argument('--report_freq', type=float, default=50, help='report frequency')
 parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
 parser.add_argument('--init_channels', type=int, default=36, help='num of init channels')
