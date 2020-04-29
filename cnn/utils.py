@@ -58,6 +58,13 @@ class Cutout(object):
         img *= mask
         return img
 
+
+def _data_back_trainsform_dataset():
+    train_transform = transforms.Compose([
+        transforms.ToPILImage(),
+    ])
+    return train_transform
+
 def _data_trainsforms_denosining_dataset(args):
     train_transform = transforms.Compose([
         transforms.CenterCrop(args.img_cropped_height),

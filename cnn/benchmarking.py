@@ -21,6 +21,7 @@ parser = argparse.ArgumentParser("cifar")
 parser.add_argument('--data', type=str, default='../data/mnt/d/SIDD_Medium_Srgb/Data', help='location of the data corpus')
 parser.add_argument('--img_cropped_height', type=int, default=32, help='img cropped height')
 parser.add_argument('--img_cropped_width', type=int, default=32, help='img cropped width')
+parser.add_argument('--result_data',default='../result_images/', help='location of the data corpus')
 parser.add_argument('--train_data', type=str, default='../data/train_data/', help='location of the train_data corpus')
 parser.add_argument('--label_data', type=str, default='../data/label_data/', help='location of the test_data corpus')
 parser.add_argument('--batch_size', type=int, default=32, help='batch size')
@@ -84,16 +85,23 @@ def main():
 def infer(test_queue, model, criterion):
   objs = utils.AvgrageMeter()
   model.eval()
-
+  transformer =  utils._data_back_trainsform_dataset()
+  batch_counter = 0
   for step, (input, target) in enumerate(test_queue):
     input = Variable(input, volatile=True).cuda()
     target = Variable(target, volatile=True).cuda(async=True)
     logits, _ = model(input)
+    logit_shape = logit_shape.shape
+
+    for i in range(0,logit_shape[0]):
+        result_img = transformer(logits[i])
+        result_img.save(args.result_data+str(batch_counter)+"_"+str(i), "PNG")
 
     loss = criterion(logits, target)
     n = input.size(0)
     objs.update(loss.data, n)
     print(objs.avg)
+    batch_counter  = batch_counter + 1;
 
   return objs.avg
 
