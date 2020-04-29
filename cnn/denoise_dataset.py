@@ -57,6 +57,8 @@ class DENOISE_DATASET(VisionDataset):
         target = Image.open(test_file).convert('RGB')
         # doing this so that it is consistent with all other datasets
         # to return a PIL Image
+        print("Img 1 Shape")
+        print(img.shape)
         if self.transform is not None:
             img = self.transform(img)
 
@@ -64,8 +66,6 @@ class DENOISE_DATASET(VisionDataset):
             target = self.target_transform(target)
         print("Img Shape")
         print(img.shape)
-        print("Target Shape")
-        print(target.shape)
         return img, target
 
     def __len__(self):
