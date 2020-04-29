@@ -58,7 +58,7 @@ class DENOISE_DATASET(VisionDataset):
         # doing this so that it is consistent with all other datasets
         # to return a PIL Image
         print("Img 1 Shape")
-        print(len(img))
+        print(img.size)
         if self.transform is not None:
             img = self.transform(img)
 
