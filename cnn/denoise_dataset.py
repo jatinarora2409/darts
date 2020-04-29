@@ -8,9 +8,6 @@ from torchvision.datasets import VisionDataset
 import cv2
 import torchvision.transforms as transforms
 
-np.set_printoptions(threshold=sys.maxsize)
-
-
 class DENOISE_DATASET(VisionDataset):
     def __init__(self, root, train_folder,label_folder,train=True, transform=None, target_transform=None):
 
@@ -60,17 +57,13 @@ class DENOISE_DATASET(VisionDataset):
         target = Image.open(test_file).convert('RGB')
         # doing this so that it is consistent with all other datasets
         # to return a PIL Image
-        print("Img 1 Shape")
-        print(img)
+
         if self.transform is not None:
             img = self.transform(img)
 
         if self.target_transform is not None:
             target = self.target_transform(target)
 
-
-        print("Img Shape")
-        print(img)
         return img, target
 
     def __len__(self):
