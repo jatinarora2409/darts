@@ -85,6 +85,9 @@ def main():
 from math import log10, sqrt
 
 def PSNR(original, compressed):
+    original = np.array(original)
+    compressed = np.array(compressed)
+
     mse = np.mean((original - compressed) ** 2)
     if (mse == 0):  # MSE is zero means no noise is present in the signal .
       # Therefore PSNR have no importance.
