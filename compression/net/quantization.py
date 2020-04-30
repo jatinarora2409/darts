@@ -87,7 +87,7 @@ def apply_weight_sharing(model, bits=2):
                                                         mat = csr_matrix(wt) if wt.shape[0] < wt.shape[1] else csc_matrix(wt)
                                                         min_ = min(mat.data)
                                                         max_ = max(mat.data)
-                                                        space = np.linspace(min_, max_, num=2 ** (layer.kernel_size[0]-1))
+                                                        space = np.linspace(min_, max_, num=2 ** bits)
                                                         kmeans = KMeans(n_clusters=len(space), init=space.reshape(-1, 1),
                                                                         n_init=1,
                                                                         precompute_distances=True, algorithm="full")
