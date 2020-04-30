@@ -115,7 +115,7 @@ def infer(test_queue, model, criterion):
         image_path = args.result_data+str(batch_counter)+"_"+str(i)+".png"
         print("For File Name: "+file_names[i])
         print('Result: '+image_path)
-        print('PSNR: '+ psnr)
+        print('PSNR: '+ str(psnr))
         psnr_avg.update(psnr, 1)
         result_img.save(image_path, "PNG")
 
