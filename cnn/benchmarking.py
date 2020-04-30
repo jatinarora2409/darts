@@ -113,17 +113,13 @@ def infer(test_queue, model, criterion):
         target_img = transformer(target[i].cpu())
         psnr = PSNR(target_img,result_img)
         image_path = args.result_data+str(batch_counter)+"_"+str(i)+".png"
-        print("For File Name: "+file_names[i])
-        print('Result: '+image_path)
-        print('PSNR: '+ str(psnr))
         psnr_avg.update(psnr, 1)
         result_img.save(image_path, "PNG")
 
     loss = criterion(logits, target)
     n = input.size(0)
     objs.update(loss.data, n)
-    print(objs.avg)
-    print(psnr_avg.avg)
+    print("Avg psnr: "+psnr_avg.avg)
     batch_counter  = batch_counter + 1;
 
   return objs.avg,psnr_avg.avg
