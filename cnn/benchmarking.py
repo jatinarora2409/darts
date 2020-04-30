@@ -80,7 +80,7 @@ def main():
   model.drop_path_prob = args.drop_path_prob
   test_acc,psnr = infer(test_queue, model, criterion)
   logging.info('test_acc %f', test_acc)
-  logging.info('psnr_acc %f', psnr)
+  logging.info('Final psnr_acc %f', psnr)
 
 from math import log10, sqrt
 
@@ -119,7 +119,7 @@ def infer(test_queue, model, criterion):
     loss = criterion(logits, target)
     n = input.size(0)
     objs.update(loss.data, n)
-    print("Avg psnr: "+psnr_avg.avg)
+    print("Avg psnr: "+str(psnr_avg.avg))
     batch_counter  = batch_counter + 1;
 
   return objs.avg,psnr_avg.avg
