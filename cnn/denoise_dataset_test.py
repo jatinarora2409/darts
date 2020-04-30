@@ -9,7 +9,7 @@ import cv2
 import torchvision.transforms as transforms
 
 class DENOISE_DATASET_TEST(VisionDataset):
-    def __init__(self, root,train=True, transform=None, target_transform=None):
+    def __init__(self, root,train_folder,label_folder,train=True, transform=None, target_transform=None):
 
         super(DENOISE_DATASET_TEST, self).__init__(root, transform=transform,
                                       target_transform=target_transform)
