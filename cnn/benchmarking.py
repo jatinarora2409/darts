@@ -78,12 +78,13 @@ def main():
       test_data, batch_size=args.batch_size, shuffle=False, pin_memory=True, num_workers=2)
 
   model.drop_path_prob = args.drop_path_prob
-  test_acc = infer(test_queue, model, criterion)
+  test_acc,psnr = infer(test_queue, model, criterion)
   logging.info('test_acc %f', test_acc)
-
+  logging.info('psnr_acc %f', psnr)
 
 def infer(test_queue, model, criterion):
   objs = utils.AvgrageMeter()
+  psnr_avg = utils.AvgrageMeter()
   model.eval()
   transformer =  utils._data_back_trainsform_dataset()
   batch_counter = 0
@@ -95,19 +96,35 @@ def infer(test_queue, model, criterion):
 
     for i in range(0,logit_shape[0]):
         result_img = transformer(logits[i].cpu())
+        target_img = transformer(target[i].cpu())
+        psnr = PSNR(target_img,result_img)
         image_path = args.result_data+str(batch_counter)+"_"+str(i)+".png"
         print("For File Name: "+file_names[i])
         print('Result: '+image_path)
+        print('PSNR: '+ psnr)
+        psnr_avg.update(psnr, 1)
         result_img.save(image_path, "PNG")
 
     loss = criterion(logits, target)
     n = input.size(0)
     objs.update(loss.data, n)
     print(objs.avg)
+    print(psnr_avg.avg)
     batch_counter  = batch_counter + 1;
 
-  return objs.avg
+  return objs.avg,psnr_avg.avg
 
 
 if __name__ == '__main__':
   main()
+
+from math import log10, sqrt
+
+def PSNR(original, compressed):
+    mse = np.mean((original - compressed) ** 2)
+    if (mse == 0):  # MSE is zero means no noise is present in the signal .
+      # Therefore PSNR have no importance.
+      return 100
+    max_pixel = 255.0
+    psnr = 20 * log10(max_pixel / sqrt(mse))
+    return psnr
