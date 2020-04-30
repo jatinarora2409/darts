@@ -14,7 +14,7 @@ import torch.backends.cudnn as cudnn
 
 from torch.autograd import Variable
 from model import NetworkCIFAR as Network
-from denoise_dataset import DENOISE_DATASET
+from denoise_dataset_test import DENOISE_DATASET_TEST
 
 
 parser = argparse.ArgumentParser("cifar")
@@ -69,7 +69,7 @@ def main():
   criterion = criterion.cuda()
 
   test_transform, test_valid_transform = utils._data_trainsforms_denosining_dataset(args)
-  test_data = DENOISE_DATASET(root=args.data,train_folder=args.train_data,label_folder=args.label_data,train=True, transform=test_transform,target_transform=test_transform )
+  test_data = DENOISE_DATASET_TEST(root=args.data,train_folder=args.train_data,label_folder=args.label_data,train=True, transform=test_transform,target_transform=test_transform )
 
   # _, test_transform = utils._data_transforms_cifar10(args)
   # test_data = dset.CIFAR10(root=args.data, train=False, download=True, transform=test_transform)
@@ -87,7 +87,7 @@ def infer(test_queue, model, criterion):
   model.eval()
   transformer =  utils._data_back_trainsform_dataset()
   batch_counter = 0
-  for step, (input, target) in enumerate(test_queue):
+  for step, (input, target,file_names) in enumerate(test_queue):
     input = Variable(input, volatile=True).cuda()
     target = Variable(target, volatile=True).cuda(async=True)
     logits, _ = model(input)
@@ -95,8 +95,10 @@ def infer(test_queue, model, criterion):
 
     for i in range(0,logit_shape[0]):
         result_img = transformer(logits[i].cpu())
-        print(result_img.size)
-        result_img.save(args.result_data+str(batch_counter)+"_"+str(i)+".png", "PNG")
+        image_path = args.result_data+str(batch_counter)+"_"+str(i)+".png"
+        print("For File Name: "+file_names[i])
+        print('Result: '+image_path)
+        result_img.save(image_path, "PNG")
 
     loss = criterion(logits, target)
     n = input.size(0)
