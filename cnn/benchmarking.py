@@ -82,6 +82,17 @@ def main():
   logging.info('test_acc %f', test_acc)
   logging.info('psnr_acc %f', psnr)
 
+from math import log10, sqrt
+
+def PSNR(original, compressed):
+    mse = np.mean((original - compressed) ** 2)
+    if (mse == 0):  # MSE is zero means no noise is present in the signal .
+      # Therefore PSNR have no importance.
+      return 100
+    max_pixel = 255.0
+    psnr = 20 * log10(max_pixel / sqrt(mse))
+    return psnr
+
 def infer(test_queue, model, criterion):
   objs = utils.AvgrageMeter()
   psnr_avg = utils.AvgrageMeter()
@@ -118,13 +129,3 @@ def infer(test_queue, model, criterion):
 if __name__ == '__main__':
   main()
 
-from math import log10, sqrt
-
-def PSNR(original, compressed):
-    mse = np.mean((original - compressed) ** 2)
-    if (mse == 0):  # MSE is zero means no noise is present in the signal .
-      # Therefore PSNR have no importance.
-      return 100
-    max_pixel = 255.0
-    psnr = 20 * log10(max_pixel / sqrt(mse))
-    return psnr
