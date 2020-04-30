@@ -91,7 +91,7 @@ def infer(test_queue, model, criterion):
     input = Variable(input, volatile=True).cuda()
     target = Variable(target, volatile=True).cuda(async=True)
     logits, _ = model(input)
-    logit_shape = logit_shape.shape
+    logit_shape = logits.shape
 
     for i in range(0,logit_shape[0]):
         result_img = transformer(logits[i])
