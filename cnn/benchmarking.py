@@ -95,7 +95,8 @@ def infer(test_queue, model, criterion):
 
     for i in range(0,logit_shape[0]):
         result_img = transformer(logits[i].cpu())
-        result_img.save(args.result_data+str(batch_counter)+"_"+str(i), "PNG")
+        print(result_img.size)
+        result_img.save(args.result_data+str(batch_counter)+"_"+str(i)+".png", "PNG")
 
     loss = criterion(logits, target)
     n = input.size(0)
