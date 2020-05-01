@@ -12,6 +12,7 @@ from torch import nn
 
 from cnn import test
 from cnn.model import Cell, ReLUConvBN
+from net.quantization import apply_weight_sharing
 
 os.makedirs('saves', exist_ok=True)
 
@@ -37,7 +38,7 @@ parser.add_argument('--log', type=str, default='log.txt',
                     help='log file name')
 parser.add_argument('--sensitivity', type=float, default=2,
                     help="sensitivity value that is multiplied to layer's std in order to get threshold value")
-parser.add_argument('--output', default='saves/model_after_pruning.ptmodel', type=str,
+parser.add_argument('--output', default='saves/model_after_pruning_and_quantization.ptmodel', type=str,
                     help='path to model output')
 args = parser.parse_args()
 
@@ -96,19 +97,20 @@ model = test.run_test(args.model, 1)
 
 # Pruning
 # print("--- Before pruning ---")
-var1 = 0.7
 # prune_darts(model, var1)
 
-for i2 in [0.8, 0.9]:
+for i2 in [0.25, 0.30, 0.40, 0.5, 0.6, 0.7, 0.8, 0.9]:
     model = test.run_test(args.model, 1)
     prune_darts(model, i2)
-    print("--- After pruning --- ")
+    print("--- Quantization --- ")
     print(i2)
-    torch.save(model, args.output)
-    test.run_test(args.output, 2)
+    # torch.save(model, args.output)
+    apply_weight_sharing(model)
+    torch.save(model.state_dict(), args.output)
+    print("--- Accuracy --- ")
+    test.run_test(args.output, 3)
 
 # Retrain
 
 # torch.save(model, args.output)
 # test.run_test(args.output, 2)
-
