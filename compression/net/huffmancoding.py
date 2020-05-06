@@ -1,12 +1,12 @@
 import os
-from collections import defaultdict, namedtuple
-from heapq import heappush, heappop, heapify
 import struct
+from collections import defaultdict, namedtuple
+from heapq import heapify, heappop, heappush
 from pathlib import Path
 
-import torch
 import numpy as np
-from scipy.sparse import csr_matrix, csc_matrix
+import torch
+from scipy.sparse import csc_matrix, csr_matrix
 
 Node = namedtuple('Node', 'freq value left right')
 Node.__lt__ = lambda x, y: x.freq < y.freq
@@ -219,7 +219,7 @@ def huffman_encode_model(model, directory='encodings/'):
             print('ignore')
             continue
         if 'weight' in name:
-            print(name)
+            # print(name)
             weight = param.data.cpu().numpy()
             shape = weight.shape
             compressed = 0
