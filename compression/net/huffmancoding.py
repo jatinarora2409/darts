@@ -1,12 +1,12 @@
 import os
-from collections import defaultdict, namedtuple
-from heapq import heappush, heappop, heapify
 import struct
+from collections import defaultdict, namedtuple
+from heapq import heapify, heappop, heappush
 from pathlib import Path
 
-import torch
 import numpy as np
-from scipy.sparse import csr_matrix, csc_matrix
+import torch
+from scipy.sparse import csc_matrix, csr_matrix
 
 Node = namedtuple('Node', 'freq value left right')
 Node.__lt__ = lambda x, y: x.freq < y.freq
@@ -215,11 +215,11 @@ def huffman_encode_model(model, directory='encodings/'):
     print(f"{'Layer':<15} | {'original':>10} {'compressed':>10} {'improvement':>11} {'percent':>7}")
     print('-' * 70)
     for name, param in model.named_parameters():
-        if 'mask' in name:
-            print('mask')
+        if 'mask' in name or 'weight_orig' in name:
+            print('ignore')
             continue
         if 'weight' in name:
-            # print('weight')
+            # print(name)
             weight = param.data.cpu().numpy()
             shape = weight.shape
             compressed = 0
@@ -250,7 +250,7 @@ def huffman_encode_model(model, directory='encodings/'):
             print(
                 f"{name:<15} | {original:10} {compressed:10} {original / compressed:>10.2f}x {100 * compressed / original:>6.2f}%")
 
-        else:  # bias
+        if 'bias' in name:  # bias
             # Note that we do not huffman encode bias
             bias = param.data.cpu().numpy()
             bias.dump(f'{directory}/{name}')
@@ -261,6 +261,8 @@ def huffman_encode_model(model, directory='encodings/'):
 
             print(
                 f"{name:<15} | {original:10} {compressed:10} {original / compressed:>10.2f}x {100 * compressed / original:>6.2f}%")
+        else:
+            print('ignore' + str(name))
         original_total += original
         compressed_total += compressed
 

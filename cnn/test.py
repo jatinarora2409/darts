@@ -13,8 +13,8 @@ import torch.utils
 import torch.backends.cudnn as cudnn
 
 from torch.autograd import Variable
-from cnn.model import NetworkCIFAR as Network
-from cnn.denoise_dataset import DENOISE_DATASET
+from model import NetworkCIFAR as Network
+from denoise_dataset import DENOISE_DATASET
 
 parser = argparse.ArgumentParser("cifar")
 parser.add_argument('--data', type=str, default='../data/mnt/d/SIDD_Medium_Srgb/Data',

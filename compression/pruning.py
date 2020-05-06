@@ -10,8 +10,8 @@ import torch.nn.utils.prune as prune
 from tensorflow.python.ops import nn
 from torch import nn
 
-from cnn import test
-from cnn.model import Cell, ReLUConvBN
+import test
+from model import Cell, ReLUConvBN
 from net.quantization import apply_weight_sharing
 
 os.makedirs('saves', exist_ok=True)
@@ -106,9 +106,9 @@ for i2 in [0.25, 0.30, 0.40, 0.5, 0.6, 0.7, 0.8, 0.9]:
     print(i2)
     # torch.save(model, args.output)
     apply_weight_sharing(model)
-    torch.save(model.state_dict(), args.output)
+    torch.save(model, args.output)
     print("--- Accuracy --- ")
-    test.run_test(args.output, 3)
+    test.run_test(args.output, 2)
 
 # Retrain
 
