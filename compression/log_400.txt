@@ -1,0 +1,1679 @@
+108 108 36
+108 144 36
+144 144 36
+144 144 36
+144 144 36
+144 144 36
+144 144 72
+144 288 72
+288 288 72
+288 288 72
+288 288 72
+288 288 72
+288 288 72
+288 288 144
+288 576 144
+576 576 144
+576 576 144
+576 576 144
+576 576 144
+576 576 144
+05/06 08:55:51 AM param size = 4.060044MB
+Total Training Samples: 43946
+Layer           |   original compressed improvement percent
+----------------------------------------------------------------------
+ignore
+stem.1.bias     |        432        432       1.00x 100.00%
+ignore
+ignore
+cells.0.preprocess0.op.2.weight
+cells.0.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.0.preprocess0.op.2.weight
+cells.0.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+ignore
+cells.0.preprocess1.op.2.weight
+cells.0.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.0.preprocess1.op.2.weight
+cells.0.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.0.op.3.weight
+cells.0._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.0.op.3.weight
+cells.0._ops.0.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.0.op.7.weight
+cells.0._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.0.op.7.weight
+cells.0._ops.0.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.1.op.3.weight
+cells.0._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.1.op.3.weight
+cells.0._ops.1.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.1.op.7.weight
+cells.0._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.1.op.7.weight
+cells.0._ops.1.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.2.op.3.weight
+cells.0._ops.2.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.2.op.3.weight
+cells.0._ops.2.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.3.op.3.weight
+cells.0._ops.3.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.3.op.3.weight
+cells.0._ops.3.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.4.op.3.weight
+cells.0._ops.4.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.4.op.3.weight
+cells.0._ops.4.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.4.op.7.weight
+cells.0._ops.4.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.4.op.7.weight
+cells.0._ops.4.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.5.op.3.weight
+cells.0._ops.5.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.5.op.3.weight
+cells.0._ops.5.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.5.op.7.weight
+cells.0._ops.5.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.5.op.7.weight
+cells.0._ops.5.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.6.op.3.weight
+cells.0._ops.6.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.6.op.3.weight
+cells.0._ops.6.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.0._ops.7.op.3.weight
+cells.0._ops.7.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.7.op.3.weight
+cells.0._ops.7.op.3.bias |        144        144       1.00x 100.00%
+ignore
+cells.1.preprocess0.op.2.weight
+cells.1.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.1.preprocess0.op.2.weight
+cells.1.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+ignore
+cells.1.preprocess1.op.2.weight
+cells.1.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.1.preprocess1.op.2.weight
+cells.1.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.0.op.3.weight
+cells.1._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.0.op.3.weight
+cells.1._ops.0.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.0.op.7.weight
+cells.1._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.0.op.7.weight
+cells.1._ops.0.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.1.op.3.weight
+cells.1._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.1.op.3.weight
+cells.1._ops.1.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.1.op.7.weight
+cells.1._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.1.op.7.weight
+cells.1._ops.1.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.2.op.3.weight
+cells.1._ops.2.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.2.op.3.weight
+cells.1._ops.2.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.3.op.3.weight
+cells.1._ops.3.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.3.op.3.weight
+cells.1._ops.3.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.4.op.3.weight
+cells.1._ops.4.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.4.op.3.weight
+cells.1._ops.4.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.4.op.7.weight
+cells.1._ops.4.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.4.op.7.weight
+cells.1._ops.4.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.5.op.3.weight
+cells.1._ops.5.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.5.op.3.weight
+cells.1._ops.5.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.5.op.7.weight
+cells.1._ops.5.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.5.op.7.weight
+cells.1._ops.5.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.6.op.3.weight
+cells.1._ops.6.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.6.op.3.weight
+cells.1._ops.6.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.1._ops.7.op.3.weight
+cells.1._ops.7.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.7.op.3.weight
+cells.1._ops.7.op.3.bias |        144        144       1.00x 100.00%
+ignore
+cells.2.preprocess0.op.2.weight
+cells.2.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.2.preprocess0.op.2.weight
+cells.2.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+ignore
+cells.2.preprocess1.op.2.weight
+cells.2.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.2.preprocess1.op.2.weight
+cells.2.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.0.op.3.weight
+cells.2._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.0.op.3.weight
+cells.2._ops.0.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.0.op.7.weight
+cells.2._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.0.op.7.weight
+cells.2._ops.0.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.1.op.3.weight
+cells.2._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.1.op.3.weight
+cells.2._ops.1.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.1.op.7.weight
+cells.2._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.1.op.7.weight
+cells.2._ops.1.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.2.op.3.weight
+cells.2._ops.2.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.2.op.3.weight
+cells.2._ops.2.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.3.op.3.weight
+cells.2._ops.3.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.3.op.3.weight
+cells.2._ops.3.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.4.op.3.weight
+cells.2._ops.4.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.4.op.3.weight
+cells.2._ops.4.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.4.op.7.weight
+cells.2._ops.4.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.4.op.7.weight
+cells.2._ops.4.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.5.op.3.weight
+cells.2._ops.5.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.5.op.3.weight
+cells.2._ops.5.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.5.op.7.weight
+cells.2._ops.5.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.5.op.7.weight
+cells.2._ops.5.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.6.op.3.weight
+cells.2._ops.6.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.6.op.3.weight
+cells.2._ops.6.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.2._ops.7.op.3.weight
+cells.2._ops.7.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.7.op.3.weight
+cells.2._ops.7.op.3.bias |        144        144       1.00x 100.00%
+ignore
+cells.3.preprocess0.op.2.weight
+cells.3.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.3.preprocess0.op.2.weight
+cells.3.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+ignore
+cells.3.preprocess1.op.2.weight
+cells.3.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.3.preprocess1.op.2.weight
+cells.3.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.0.op.3.weight
+cells.3._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.0.op.3.weight
+cells.3._ops.0.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.0.op.7.weight
+cells.3._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.0.op.7.weight
+cells.3._ops.0.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.1.op.3.weight
+cells.3._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.1.op.3.weight
+cells.3._ops.1.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.1.op.7.weight
+cells.3._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.1.op.7.weight
+cells.3._ops.1.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.2.op.3.weight
+cells.3._ops.2.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.2.op.3.weight
+cells.3._ops.2.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.3.op.3.weight
+cells.3._ops.3.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.3.op.3.weight
+cells.3._ops.3.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.4.op.3.weight
+cells.3._ops.4.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.4.op.3.weight
+cells.3._ops.4.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.4.op.7.weight
+cells.3._ops.4.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.4.op.7.weight
+cells.3._ops.4.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.5.op.3.weight
+cells.3._ops.5.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.5.op.3.weight
+cells.3._ops.5.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.5.op.7.weight
+cells.3._ops.5.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.5.op.7.weight
+cells.3._ops.5.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.6.op.3.weight
+cells.3._ops.6.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.6.op.3.weight
+cells.3._ops.6.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.3._ops.7.op.3.weight
+cells.3._ops.7.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.3._ops.7.op.3.weight
+cells.3._ops.7.op.3.bias |        144        144       1.00x 100.00%
+ignore
+cells.4.preprocess0.op.2.weight
+cells.4.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.4.preprocess0.op.2.weight
+cells.4.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+ignore
+cells.4.preprocess1.op.2.weight
+cells.4.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.4.preprocess1.op.2.weight
+cells.4.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.0.op.3.weight
+cells.4._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.0.op.3.weight
+cells.4._ops.0.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.0.op.7.weight
+cells.4._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.0.op.7.weight
+cells.4._ops.0.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.1.op.3.weight
+cells.4._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.1.op.3.weight
+cells.4._ops.1.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.1.op.7.weight
+cells.4._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.1.op.7.weight
+cells.4._ops.1.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.2.op.3.weight
+cells.4._ops.2.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.2.op.3.weight
+cells.4._ops.2.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.3.op.3.weight
+cells.4._ops.3.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.3.op.3.weight
+cells.4._ops.3.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.4.op.3.weight
+cells.4._ops.4.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.4.op.3.weight
+cells.4._ops.4.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.4.op.7.weight
+cells.4._ops.4.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.4.op.7.weight
+cells.4._ops.4.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.5.op.3.weight
+cells.4._ops.5.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.5.op.3.weight
+cells.4._ops.5.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.5.op.7.weight
+cells.4._ops.5.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.5.op.7.weight
+cells.4._ops.5.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.6.op.3.weight
+cells.4._ops.6.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.6.op.3.weight
+cells.4._ops.6.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.4._ops.7.op.3.weight
+cells.4._ops.7.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.4._ops.7.op.3.weight
+cells.4._ops.7.op.3.bias |        144        144       1.00x 100.00%
+ignore
+cells.5.preprocess0.op.2.weight
+cells.5.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.5.preprocess0.op.2.weight
+cells.5.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+ignore
+cells.5.preprocess1.op.2.weight
+cells.5.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.5.preprocess1.op.2.weight
+cells.5.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.0.op.3.weight
+cells.5._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.0.op.3.weight
+cells.5._ops.0.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.0.op.7.weight
+cells.5._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.0.op.7.weight
+cells.5._ops.0.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.1.op.3.weight
+cells.5._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.1.op.3.weight
+cells.5._ops.1.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.1.op.7.weight
+cells.5._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.1.op.7.weight
+cells.5._ops.1.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.2.op.3.weight
+cells.5._ops.2.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.2.op.3.weight
+cells.5._ops.2.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.3.op.3.weight
+cells.5._ops.3.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.3.op.3.weight
+cells.5._ops.3.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.4.op.3.weight
+cells.5._ops.4.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.4.op.3.weight
+cells.5._ops.4.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.4.op.7.weight
+cells.5._ops.4.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.4.op.7.weight
+cells.5._ops.4.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.5.op.3.weight
+cells.5._ops.5.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.5.op.3.weight
+cells.5._ops.5.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.5.op.7.weight
+cells.5._ops.5.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.5.op.7.weight
+cells.5._ops.5.op.7.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.6.op.3.weight
+cells.5._ops.6.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.6.op.3.weight
+cells.5._ops.6.op.3.bias |        144        144       1.00x 100.00%
+ignore
+ignore
+cells.5._ops.7.op.3.weight
+cells.5._ops.7.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.5._ops.7.op.3.weight
+cells.5._ops.7.op.3.bias |        144        144       1.00x 100.00%
+ignore
+cells.6.preprocess0.op.2.weight
+cells.6.preprocess0.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.6.preprocess0.op.2.weight
+cells.6.preprocess0.op.2.bias |        288        288       1.00x 100.00%
+ignore
+cells.6.preprocess1.op.2.weight
+cells.6.preprocess1.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.6.preprocess1.op.2.weight
+cells.6.preprocess1.op.2.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.0.op.3.weight
+cells.6._ops.0.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.0.op.3.weight
+cells.6._ops.0.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.0.op.7.weight
+cells.6._ops.0.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.0.op.7.weight
+cells.6._ops.0.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.1.op.3.weight
+cells.6._ops.1.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.1.op.3.weight
+cells.6._ops.1.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.2.op.3.weight
+cells.6._ops.2.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.2.op.3.weight
+cells.6._ops.2.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.2.op.7.weight
+cells.6._ops.2.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.2.op.7.weight
+cells.6._ops.2.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.3.op.3.weight
+cells.6._ops.3.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.3.op.3.weight
+cells.6._ops.3.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.3.op.7.weight
+cells.6._ops.3.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.3.op.7.weight
+cells.6._ops.3.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.4.op.3.weight
+cells.6._ops.4.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.4.op.3.weight
+cells.6._ops.4.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.4.op.7.weight
+cells.6._ops.4.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.4.op.7.weight
+cells.6._ops.4.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.5.op.3.weight
+cells.6._ops.5.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.5.op.3.weight
+cells.6._ops.5.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.6.op.3.weight
+cells.6._ops.6.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.6.op.3.weight
+cells.6._ops.6.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.6._ops.7.op.3.weight
+cells.6._ops.7.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.6._ops.7.op.3.weight
+cells.6._ops.7.op.3.bias |        288        288       1.00x 100.00%
+cells.7.preprocess0.conv_1.weight
+cells.7.preprocess0.conv_1.weight |      82944     108864       0.76x 131.25%
+ignorecells.7.preprocess0.conv_1.weight
+cells.7.preprocess0.conv_2.weight
+cells.7.preprocess0.conv_2.weight |      82944     108864       0.76x 131.25%
+ignorecells.7.preprocess0.conv_2.weight
+cells.7.preprocess0.bn.weight
+cells.7.preprocess0.bn.weight |        288        288       1.00x 100.00%
+ignorecells.7.preprocess0.bn.weight
+cells.7.preprocess0.bn.bias |        288        288       1.00x 100.00%
+ignore
+cells.7.preprocess1.op.2.weight
+cells.7.preprocess1.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.7.preprocess1.op.2.weight
+cells.7.preprocess1.op.2.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.0.op.3.weight
+cells.7._ops.0.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.0.op.3.weight
+cells.7._ops.0.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.0.op.7.weight
+cells.7._ops.0.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.0.op.7.weight
+cells.7._ops.0.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.1.op.3.weight
+cells.7._ops.1.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.1.op.3.weight
+cells.7._ops.1.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.1.op.7.weight
+cells.7._ops.1.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.1.op.7.weight
+cells.7._ops.1.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.2.op.3.weight
+cells.7._ops.2.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.2.op.3.weight
+cells.7._ops.2.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.3.op.3.weight
+cells.7._ops.3.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.3.op.3.weight
+cells.7._ops.3.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.4.op.3.weight
+cells.7._ops.4.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.4.op.3.weight
+cells.7._ops.4.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.4.op.7.weight
+cells.7._ops.4.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.4.op.7.weight
+cells.7._ops.4.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.5.op.3.weight
+cells.7._ops.5.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.5.op.3.weight
+cells.7._ops.5.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.5.op.7.weight
+cells.7._ops.5.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.5.op.7.weight
+cells.7._ops.5.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.6.op.3.weight
+cells.7._ops.6.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.6.op.3.weight
+cells.7._ops.6.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.7._ops.7.op.3.weight
+cells.7._ops.7.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.7._ops.7.op.3.weight
+cells.7._ops.7.op.3.bias |        288        288       1.00x 100.00%
+ignore
+cells.8.preprocess0.op.2.weight
+cells.8.preprocess0.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.8.preprocess0.op.2.weight
+cells.8.preprocess0.op.2.bias |        288        288       1.00x 100.00%
+ignore
+cells.8.preprocess1.op.2.weight
+cells.8.preprocess1.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.8.preprocess1.op.2.weight
+cells.8.preprocess1.op.2.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.0.op.3.weight
+cells.8._ops.0.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.0.op.3.weight
+cells.8._ops.0.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.0.op.7.weight
+cells.8._ops.0.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.0.op.7.weight
+cells.8._ops.0.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.1.op.3.weight
+cells.8._ops.1.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.1.op.3.weight
+cells.8._ops.1.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.1.op.7.weight
+cells.8._ops.1.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.1.op.7.weight
+cells.8._ops.1.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.2.op.3.weight
+cells.8._ops.2.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.2.op.3.weight
+cells.8._ops.2.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.3.op.3.weight
+cells.8._ops.3.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.3.op.3.weight
+cells.8._ops.3.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.4.op.3.weight
+cells.8._ops.4.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.4.op.3.weight
+cells.8._ops.4.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.4.op.7.weight
+cells.8._ops.4.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.4.op.7.weight
+cells.8._ops.4.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.5.op.3.weight
+cells.8._ops.5.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.5.op.3.weight
+cells.8._ops.5.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.5.op.7.weight
+cells.8._ops.5.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.5.op.7.weight
+cells.8._ops.5.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.6.op.3.weight
+cells.8._ops.6.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.6.op.3.weight
+cells.8._ops.6.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.8._ops.7.op.3.weight
+cells.8._ops.7.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.8._ops.7.op.3.weight
+cells.8._ops.7.op.3.bias |        288        288       1.00x 100.00%
+ignore
+cells.9.preprocess0.op.2.weight
+cells.9.preprocess0.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.9.preprocess0.op.2.weight
+cells.9.preprocess0.op.2.bias |        288        288       1.00x 100.00%
+ignore
+cells.9.preprocess1.op.2.weight
+cells.9.preprocess1.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.9.preprocess1.op.2.weight
+cells.9.preprocess1.op.2.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.0.op.3.weight
+cells.9._ops.0.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.0.op.3.weight
+cells.9._ops.0.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.0.op.7.weight
+cells.9._ops.0.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.0.op.7.weight
+cells.9._ops.0.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.1.op.3.weight
+cells.9._ops.1.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.1.op.3.weight
+cells.9._ops.1.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.1.op.7.weight
+cells.9._ops.1.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.1.op.7.weight
+cells.9._ops.1.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.2.op.3.weight
+cells.9._ops.2.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.2.op.3.weight
+cells.9._ops.2.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.3.op.3.weight
+cells.9._ops.3.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.3.op.3.weight
+cells.9._ops.3.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.4.op.3.weight
+cells.9._ops.4.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.4.op.3.weight
+cells.9._ops.4.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.4.op.7.weight
+cells.9._ops.4.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.4.op.7.weight
+cells.9._ops.4.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.5.op.3.weight
+cells.9._ops.5.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.5.op.3.weight
+cells.9._ops.5.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.5.op.7.weight
+cells.9._ops.5.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.5.op.7.weight
+cells.9._ops.5.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.6.op.3.weight
+cells.9._ops.6.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.6.op.3.weight
+cells.9._ops.6.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.9._ops.7.op.3.weight
+cells.9._ops.7.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.9._ops.7.op.3.weight
+cells.9._ops.7.op.3.bias |        288        288       1.00x 100.00%
+ignore
+cells.10.preprocess0.op.2.weight
+cells.10.preprocess0.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.10.preprocess0.op.2.weight
+cells.10.preprocess0.op.2.bias |        288        288       1.00x 100.00%
+ignore
+cells.10.preprocess1.op.2.weight
+cells.10.preprocess1.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.10.preprocess1.op.2.weight
+cells.10.preprocess1.op.2.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.0.op.3.weight
+cells.10._ops.0.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.0.op.3.weight
+cells.10._ops.0.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.0.op.7.weight
+cells.10._ops.0.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.0.op.7.weight
+cells.10._ops.0.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.1.op.3.weight
+cells.10._ops.1.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.1.op.3.weight
+cells.10._ops.1.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.1.op.7.weight
+cells.10._ops.1.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.1.op.7.weight
+cells.10._ops.1.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.2.op.3.weight
+cells.10._ops.2.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.2.op.3.weight
+cells.10._ops.2.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.3.op.3.weight
+cells.10._ops.3.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.3.op.3.weight
+cells.10._ops.3.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.4.op.3.weight
+cells.10._ops.4.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.4.op.3.weight
+cells.10._ops.4.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.4.op.7.weight
+cells.10._ops.4.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.4.op.7.weight
+cells.10._ops.4.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.5.op.3.weight
+cells.10._ops.5.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.5.op.3.weight
+cells.10._ops.5.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.5.op.7.weight
+cells.10._ops.5.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.5.op.7.weight
+cells.10._ops.5.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.6.op.3.weight
+cells.10._ops.6.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.6.op.3.weight
+cells.10._ops.6.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.10._ops.7.op.3.weight
+cells.10._ops.7.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.10._ops.7.op.3.weight
+cells.10._ops.7.op.3.bias |        288        288       1.00x 100.00%
+ignore
+cells.11.preprocess0.op.2.weight
+cells.11.preprocess0.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.11.preprocess0.op.2.weight
+cells.11.preprocess0.op.2.bias |        288        288       1.00x 100.00%
+ignore
+cells.11.preprocess1.op.2.weight
+cells.11.preprocess1.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.11.preprocess1.op.2.weight
+cells.11.preprocess1.op.2.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.0.op.3.weight
+cells.11._ops.0.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.0.op.3.weight
+cells.11._ops.0.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.0.op.7.weight
+cells.11._ops.0.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.0.op.7.weight
+cells.11._ops.0.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.1.op.3.weight
+cells.11._ops.1.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.1.op.3.weight
+cells.11._ops.1.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.1.op.7.weight
+cells.11._ops.1.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.1.op.7.weight
+cells.11._ops.1.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.2.op.3.weight
+cells.11._ops.2.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.2.op.3.weight
+cells.11._ops.2.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.3.op.3.weight
+cells.11._ops.3.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.3.op.3.weight
+cells.11._ops.3.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.4.op.3.weight
+cells.11._ops.4.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.4.op.3.weight
+cells.11._ops.4.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.4.op.7.weight
+cells.11._ops.4.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.4.op.7.weight
+cells.11._ops.4.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.5.op.3.weight
+cells.11._ops.5.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.5.op.3.weight
+cells.11._ops.5.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.5.op.7.weight
+cells.11._ops.5.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.5.op.7.weight
+cells.11._ops.5.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.6.op.3.weight
+cells.11._ops.6.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.6.op.3.weight
+cells.11._ops.6.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.11._ops.7.op.3.weight
+cells.11._ops.7.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.11._ops.7.op.3.weight
+cells.11._ops.7.op.3.bias |        288        288       1.00x 100.00%
+ignore
+cells.12.preprocess0.op.2.weight
+cells.12.preprocess0.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.12.preprocess0.op.2.weight
+cells.12.preprocess0.op.2.bias |        288        288       1.00x 100.00%
+ignore
+cells.12.preprocess1.op.2.weight
+cells.12.preprocess1.op.2.weight |        288        288       1.00x 100.00%
+ignorecells.12.preprocess1.op.2.weight
+cells.12.preprocess1.op.2.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.0.op.3.weight
+cells.12._ops.0.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.0.op.3.weight
+cells.12._ops.0.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.0.op.7.weight
+cells.12._ops.0.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.0.op.7.weight
+cells.12._ops.0.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.1.op.3.weight
+cells.12._ops.1.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.1.op.3.weight
+cells.12._ops.1.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.1.op.7.weight
+cells.12._ops.1.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.1.op.7.weight
+cells.12._ops.1.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.2.op.3.weight
+cells.12._ops.2.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.2.op.3.weight
+cells.12._ops.2.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.3.op.3.weight
+cells.12._ops.3.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.3.op.3.weight
+cells.12._ops.3.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.4.op.3.weight
+cells.12._ops.4.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.4.op.3.weight
+cells.12._ops.4.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.4.op.7.weight
+cells.12._ops.4.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.4.op.7.weight
+cells.12._ops.4.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.5.op.3.weight
+cells.12._ops.5.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.5.op.3.weight
+cells.12._ops.5.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.5.op.7.weight
+cells.12._ops.5.op.7.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.5.op.7.weight
+cells.12._ops.5.op.7.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.6.op.3.weight
+cells.12._ops.6.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.6.op.3.weight
+cells.12._ops.6.op.3.bias |        288        288       1.00x 100.00%
+ignore
+ignore
+cells.12._ops.7.op.3.weight
+cells.12._ops.7.op.3.weight |        288        288       1.00x 100.00%
+ignorecells.12._ops.7.op.3.weight
+cells.12._ops.7.op.3.bias |        288        288       1.00x 100.00%
+ignore
+cells.13.preprocess0.op.2.weight
+cells.13.preprocess0.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.13.preprocess0.op.2.weight
+cells.13.preprocess0.op.2.bias |        576        576       1.00x 100.00%
+ignore
+cells.13.preprocess1.op.2.weight
+cells.13.preprocess1.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.13.preprocess1.op.2.weight
+cells.13.preprocess1.op.2.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.0.op.3.weight
+cells.13._ops.0.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.0.op.3.weight
+cells.13._ops.0.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.0.op.7.weight
+cells.13._ops.0.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.0.op.7.weight
+cells.13._ops.0.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.1.op.3.weight
+cells.13._ops.1.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.1.op.3.weight
+cells.13._ops.1.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.2.op.3.weight
+cells.13._ops.2.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.2.op.3.weight
+cells.13._ops.2.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.2.op.7.weight
+cells.13._ops.2.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.2.op.7.weight
+cells.13._ops.2.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.3.op.3.weight
+cells.13._ops.3.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.3.op.3.weight
+cells.13._ops.3.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.3.op.7.weight
+cells.13._ops.3.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.3.op.7.weight
+cells.13._ops.3.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.4.op.3.weight
+cells.13._ops.4.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.4.op.3.weight
+cells.13._ops.4.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.4.op.7.weight
+cells.13._ops.4.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.4.op.7.weight
+cells.13._ops.4.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.5.op.3.weight
+cells.13._ops.5.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.5.op.3.weight
+cells.13._ops.5.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.6.op.3.weight
+cells.13._ops.6.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.6.op.3.weight
+cells.13._ops.6.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.13._ops.7.op.3.weight
+cells.13._ops.7.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.13._ops.7.op.3.weight
+cells.13._ops.7.op.3.bias |        576        576       1.00x 100.00%
+cells.14.preprocess0.conv_1.weight
+cells.14.preprocess0.conv_1.weight |     331776     435456       0.76x 131.25%
+ignorecells.14.preprocess0.conv_1.weight
+cells.14.preprocess0.conv_2.weight
+cells.14.preprocess0.conv_2.weight |     331776     435456       0.76x 131.25%
+ignorecells.14.preprocess0.conv_2.weight
+cells.14.preprocess0.bn.weight
+cells.14.preprocess0.bn.weight |        576        576       1.00x 100.00%
+ignorecells.14.preprocess0.bn.weight
+cells.14.preprocess0.bn.bias |        576        576       1.00x 100.00%
+ignore
+cells.14.preprocess1.op.2.weight
+cells.14.preprocess1.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.14.preprocess1.op.2.weight
+cells.14.preprocess1.op.2.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.0.op.3.weight
+cells.14._ops.0.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.0.op.3.weight
+cells.14._ops.0.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.0.op.7.weight
+cells.14._ops.0.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.0.op.7.weight
+cells.14._ops.0.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.1.op.3.weight
+cells.14._ops.1.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.1.op.3.weight
+cells.14._ops.1.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.1.op.7.weight
+cells.14._ops.1.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.1.op.7.weight
+cells.14._ops.1.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.2.op.3.weight
+cells.14._ops.2.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.2.op.3.weight
+cells.14._ops.2.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.3.op.3.weight
+cells.14._ops.3.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.3.op.3.weight
+cells.14._ops.3.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.4.op.3.weight
+cells.14._ops.4.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.4.op.3.weight
+cells.14._ops.4.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.4.op.7.weight
+cells.14._ops.4.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.4.op.7.weight
+cells.14._ops.4.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.5.op.3.weight
+cells.14._ops.5.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.5.op.3.weight
+cells.14._ops.5.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.5.op.7.weight
+cells.14._ops.5.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.5.op.7.weight
+cells.14._ops.5.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.6.op.3.weight
+cells.14._ops.6.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.6.op.3.weight
+cells.14._ops.6.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.14._ops.7.op.3.weight
+cells.14._ops.7.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.14._ops.7.op.3.weight
+cells.14._ops.7.op.3.bias |        576        576       1.00x 100.00%
+ignore
+cells.15.preprocess0.op.2.weight
+cells.15.preprocess0.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.15.preprocess0.op.2.weight
+cells.15.preprocess0.op.2.bias |        576        576       1.00x 100.00%
+ignore
+cells.15.preprocess1.op.2.weight
+cells.15.preprocess1.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.15.preprocess1.op.2.weight
+cells.15.preprocess1.op.2.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.0.op.3.weight
+cells.15._ops.0.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.0.op.3.weight
+cells.15._ops.0.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.0.op.7.weight
+cells.15._ops.0.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.0.op.7.weight
+cells.15._ops.0.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.1.op.3.weight
+cells.15._ops.1.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.1.op.3.weight
+cells.15._ops.1.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.1.op.7.weight
+cells.15._ops.1.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.1.op.7.weight
+cells.15._ops.1.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.2.op.3.weight
+cells.15._ops.2.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.2.op.3.weight
+cells.15._ops.2.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.3.op.3.weight
+cells.15._ops.3.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.3.op.3.weight
+cells.15._ops.3.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.4.op.3.weight
+cells.15._ops.4.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.4.op.3.weight
+cells.15._ops.4.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.4.op.7.weight
+cells.15._ops.4.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.4.op.7.weight
+cells.15._ops.4.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.5.op.3.weight
+cells.15._ops.5.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.5.op.3.weight
+cells.15._ops.5.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.5.op.7.weight
+cells.15._ops.5.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.5.op.7.weight
+cells.15._ops.5.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.6.op.3.weight
+cells.15._ops.6.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.6.op.3.weight
+cells.15._ops.6.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.15._ops.7.op.3.weight
+cells.15._ops.7.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.15._ops.7.op.3.weight
+cells.15._ops.7.op.3.bias |        576        576       1.00x 100.00%
+ignore
+cells.16.preprocess0.op.2.weight
+cells.16.preprocess0.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.16.preprocess0.op.2.weight
+cells.16.preprocess0.op.2.bias |        576        576       1.00x 100.00%
+ignore
+cells.16.preprocess1.op.2.weight
+cells.16.preprocess1.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.16.preprocess1.op.2.weight
+cells.16.preprocess1.op.2.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.0.op.3.weight
+cells.16._ops.0.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.0.op.3.weight
+cells.16._ops.0.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.0.op.7.weight
+cells.16._ops.0.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.0.op.7.weight
+cells.16._ops.0.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.1.op.3.weight
+cells.16._ops.1.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.1.op.3.weight
+cells.16._ops.1.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.1.op.7.weight
+cells.16._ops.1.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.1.op.7.weight
+cells.16._ops.1.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.2.op.3.weight
+cells.16._ops.2.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.2.op.3.weight
+cells.16._ops.2.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.3.op.3.weight
+cells.16._ops.3.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.3.op.3.weight
+cells.16._ops.3.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.4.op.3.weight
+cells.16._ops.4.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.4.op.3.weight
+cells.16._ops.4.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.4.op.7.weight
+cells.16._ops.4.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.4.op.7.weight
+cells.16._ops.4.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.5.op.3.weight
+cells.16._ops.5.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.5.op.3.weight
+cells.16._ops.5.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.5.op.7.weight
+cells.16._ops.5.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.5.op.7.weight
+cells.16._ops.5.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.6.op.3.weight
+cells.16._ops.6.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.6.op.3.weight
+cells.16._ops.6.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.16._ops.7.op.3.weight
+cells.16._ops.7.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.16._ops.7.op.3.weight
+cells.16._ops.7.op.3.bias |        576        576       1.00x 100.00%
+ignore
+cells.17.preprocess0.op.2.weight
+cells.17.preprocess0.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.17.preprocess0.op.2.weight
+cells.17.preprocess0.op.2.bias |        576        576       1.00x 100.00%
+ignore
+cells.17.preprocess1.op.2.weight
+cells.17.preprocess1.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.17.preprocess1.op.2.weight
+cells.17.preprocess1.op.2.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.0.op.3.weight
+cells.17._ops.0.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.0.op.3.weight
+cells.17._ops.0.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.0.op.7.weight
+cells.17._ops.0.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.0.op.7.weight
+cells.17._ops.0.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.1.op.3.weight
+cells.17._ops.1.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.1.op.3.weight
+cells.17._ops.1.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.1.op.7.weight
+cells.17._ops.1.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.1.op.7.weight
+cells.17._ops.1.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.2.op.3.weight
+cells.17._ops.2.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.2.op.3.weight
+cells.17._ops.2.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.3.op.3.weight
+cells.17._ops.3.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.3.op.3.weight
+cells.17._ops.3.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.4.op.3.weight
+cells.17._ops.4.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.4.op.3.weight
+cells.17._ops.4.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.4.op.7.weight
+cells.17._ops.4.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.4.op.7.weight
+cells.17._ops.4.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.5.op.3.weight
+cells.17._ops.5.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.5.op.3.weight
+cells.17._ops.5.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.5.op.7.weight
+cells.17._ops.5.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.5.op.7.weight
+cells.17._ops.5.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.6.op.3.weight
+cells.17._ops.6.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.6.op.3.weight
+cells.17._ops.6.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.17._ops.7.op.3.weight
+cells.17._ops.7.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.17._ops.7.op.3.weight
+cells.17._ops.7.op.3.bias |        576        576       1.00x 100.00%
+ignore
+cells.18.preprocess0.op.2.weight
+cells.18.preprocess0.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.18.preprocess0.op.2.weight
+cells.18.preprocess0.op.2.bias |        576        576       1.00x 100.00%
+ignore
+cells.18.preprocess1.op.2.weight
+cells.18.preprocess1.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.18.preprocess1.op.2.weight
+cells.18.preprocess1.op.2.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.0.op.3.weight
+cells.18._ops.0.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.0.op.3.weight
+cells.18._ops.0.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.0.op.7.weight
+cells.18._ops.0.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.0.op.7.weight
+cells.18._ops.0.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.1.op.3.weight
+cells.18._ops.1.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.1.op.3.weight
+cells.18._ops.1.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.1.op.7.weight
+cells.18._ops.1.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.1.op.7.weight
+cells.18._ops.1.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.2.op.3.weight
+cells.18._ops.2.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.2.op.3.weight
+cells.18._ops.2.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.3.op.3.weight
+cells.18._ops.3.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.3.op.3.weight
+cells.18._ops.3.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.4.op.3.weight
+cells.18._ops.4.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.4.op.3.weight
+cells.18._ops.4.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.4.op.7.weight
+cells.18._ops.4.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.4.op.7.weight
+cells.18._ops.4.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.5.op.3.weight
+cells.18._ops.5.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.5.op.3.weight
+cells.18._ops.5.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.5.op.7.weight
+cells.18._ops.5.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.5.op.7.weight
+cells.18._ops.5.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.6.op.3.weight
+cells.18._ops.6.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.6.op.3.weight
+cells.18._ops.6.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.18._ops.7.op.3.weight
+cells.18._ops.7.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.18._ops.7.op.3.weight
+cells.18._ops.7.op.3.bias |        576        576       1.00x 100.00%
+ignore
+cells.19.preprocess0.op.2.weight
+cells.19.preprocess0.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.19.preprocess0.op.2.weight
+cells.19.preprocess0.op.2.bias |        576        576       1.00x 100.00%
+ignore
+cells.19.preprocess1.op.2.weight
+cells.19.preprocess1.op.2.weight |        576        576       1.00x 100.00%
+ignorecells.19.preprocess1.op.2.weight
+cells.19.preprocess1.op.2.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.0.op.3.weight
+cells.19._ops.0.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.0.op.3.weight
+cells.19._ops.0.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.0.op.7.weight
+cells.19._ops.0.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.0.op.7.weight
+cells.19._ops.0.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.1.op.3.weight
+cells.19._ops.1.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.1.op.3.weight
+cells.19._ops.1.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.1.op.7.weight
+cells.19._ops.1.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.1.op.7.weight
+cells.19._ops.1.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.2.op.3.weight
+cells.19._ops.2.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.2.op.3.weight
+cells.19._ops.2.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.3.op.3.weight
+cells.19._ops.3.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.3.op.3.weight
+cells.19._ops.3.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.4.op.3.weight
+cells.19._ops.4.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.4.op.3.weight
+cells.19._ops.4.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.4.op.7.weight
+cells.19._ops.4.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.4.op.7.weight
+cells.19._ops.4.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.5.op.3.weight
+cells.19._ops.5.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.5.op.3.weight
+cells.19._ops.5.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.5.op.7.weight
+cells.19._ops.5.op.7.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.5.op.7.weight
+cells.19._ops.5.op.7.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.6.op.3.weight
+cells.19._ops.6.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.6.op.3.weight
+cells.19._ops.6.op.3.bias |        576        576       1.00x 100.00%
+ignore
+ignore
+cells.19._ops.7.op.3.weight
+cells.19._ops.7.op.3.weight |        576        576       1.00x 100.00%
+ignorecells.19._ops.7.op.3.weight
+cells.19._ops.7.op.3.bias |        576        576       1.00x 100.00%
+----------------------------------------------------------------------
+total           |    1023408    1282608       0.80x 125.33%

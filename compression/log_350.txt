@@ -1,0 +1,353 @@
+108 108 36
+108 144 36
+144 144 36
+144 144 36
+144 144 36
+144 144 36
+144 144 72
+144 288 72
+288 288 72
+288 288 72
+288 288 72
+288 288 72
+288 288 72
+288 288 144
+288 576 144
+576 576 144
+576 576 144
+576 576 144
+576 576 144
+576 576 144
+05/06 08:51:06 AM param size = 4.060044MB
+Total Training Samples: 43946
+Layer           |   original compressed improvement percent
+----------------------------------------------------------------------
+stem.0.weight_orig
+stem.0.weight_orig |      28512      22356       1.28x  78.41%
+ignorestem.0.weight_orig
+stem.1.bias     |        432        432       1.00x 100.00%
+stem.1.weight_orig
+stem.1.weight_orig |        432        432       1.00x 100.00%
+ignorestem.1.weight_orig
+cells.0.preprocess0.op.1.weight_orig
+cells.0.preprocess0.op.1.weight_orig |      62208      81648       0.76x 131.25%
+ignorecells.0.preprocess0.op.1.weight_orig
+cells.0.preprocess0.op.2.weight
+cells.0.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.0.preprocess0.op.2.weight
+cells.0.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+cells.0.preprocess1.op.1.weight_orig
+cells.0.preprocess1.op.1.weight_orig |      62208      81648       0.76x 131.25%
+ignorecells.0.preprocess1.op.1.weight_orig
+cells.0.preprocess1.op.2.weight
+cells.0.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.0.preprocess1.op.2.weight
+cells.0.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+cells.0._ops.0.op.1.weight_orig
+cells.0._ops.0.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.0._ops.0.op.1.weight_orig
+cells.0._ops.0.op.2.weight_orig
+cells.0._ops.0.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.0.op.2.weight_orig
+cells.0._ops.0.op.3.weight
+cells.0._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.0.op.3.weight
+cells.0._ops.0.op.3.bias |        144        144       1.00x 100.00%
+cells.0._ops.0.op.5.weight_orig
+cells.0._ops.0.op.5.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.0._ops.0.op.5.weight_orig
+cells.0._ops.0.op.6.weight_orig
+cells.0._ops.0.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.0.op.6.weight_orig
+cells.0._ops.0.op.7.weight
+cells.0._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.0.op.7.weight
+cells.0._ops.0.op.7.bias |        144        144       1.00x 100.00%
+cells.0._ops.1.op.1.weight_orig
+cells.0._ops.1.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.0._ops.1.op.1.weight_orig
+cells.0._ops.1.op.2.weight_orig
+cells.0._ops.1.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.1.op.2.weight_orig
+cells.0._ops.1.op.3.weight
+cells.0._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.1.op.3.weight
+cells.0._ops.1.op.3.bias |        144        144       1.00x 100.00%
+cells.0._ops.1.op.5.weight_orig
+cells.0._ops.1.op.5.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.0._ops.1.op.5.weight_orig
+cells.0._ops.1.op.6.weight_orig
+cells.0._ops.1.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.1.op.6.weight_orig
+cells.0._ops.1.op.7.weight
+cells.0._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.1.op.7.weight
+cells.0._ops.1.op.7.bias |        144        144       1.00x 100.00%
+cells.0._ops.2.op.1.weight_orig
+cells.0._ops.2.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.0._ops.2.op.1.weight_orig
+cells.0._ops.2.op.2.weight_orig
+cells.0._ops.2.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.2.op.2.weight_orig
+cells.0._ops.2.op.3.weight
+cells.0._ops.2.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.2.op.3.weight
+cells.0._ops.2.op.3.bias |        144        144       1.00x 100.00%
+cells.0._ops.3.op.1.weight_orig
+cells.0._ops.3.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.0._ops.3.op.1.weight_orig
+cells.0._ops.3.op.2.weight_orig
+cells.0._ops.3.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.3.op.2.weight_orig
+cells.0._ops.3.op.3.weight
+cells.0._ops.3.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.3.op.3.weight
+cells.0._ops.3.op.3.bias |        144        144       1.00x 100.00%
+cells.0._ops.4.op.1.weight_orig
+cells.0._ops.4.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.0._ops.4.op.1.weight_orig
+cells.0._ops.4.op.2.weight_orig
+cells.0._ops.4.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.4.op.2.weight_orig
+cells.0._ops.4.op.3.weight
+cells.0._ops.4.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.4.op.3.weight
+cells.0._ops.4.op.3.bias |        144        144       1.00x 100.00%
+cells.0._ops.4.op.5.weight_orig
+cells.0._ops.4.op.5.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.0._ops.4.op.5.weight_orig
+cells.0._ops.4.op.6.weight_orig
+cells.0._ops.4.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.4.op.6.weight_orig
+cells.0._ops.4.op.7.weight
+cells.0._ops.4.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.4.op.7.weight
+cells.0._ops.4.op.7.bias |        144        144       1.00x 100.00%
+cells.0._ops.5.op.1.weight_orig
+cells.0._ops.5.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.0._ops.5.op.1.weight_orig
+cells.0._ops.5.op.2.weight_orig
+cells.0._ops.5.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.5.op.2.weight_orig
+cells.0._ops.5.op.3.weight
+cells.0._ops.5.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.5.op.3.weight
+cells.0._ops.5.op.3.bias |        144        144       1.00x 100.00%
+cells.0._ops.5.op.5.weight_orig
+cells.0._ops.5.op.5.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.0._ops.5.op.5.weight_orig
+cells.0._ops.5.op.6.weight_orig
+cells.0._ops.5.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.5.op.6.weight_orig
+cells.0._ops.5.op.7.weight
+cells.0._ops.5.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.5.op.7.weight
+cells.0._ops.5.op.7.bias |        144        144       1.00x 100.00%
+cells.0._ops.6.op.1.weight_orig
+cells.0._ops.6.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.0._ops.6.op.1.weight_orig
+cells.0._ops.6.op.2.weight_orig
+cells.0._ops.6.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.6.op.2.weight_orig
+cells.0._ops.6.op.3.weight
+cells.0._ops.6.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.6.op.3.weight
+cells.0._ops.6.op.3.bias |        144        144       1.00x 100.00%
+cells.0._ops.7.op.1.weight_orig
+cells.0._ops.7.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.0._ops.7.op.1.weight_orig
+cells.0._ops.7.op.2.weight_orig
+cells.0._ops.7.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.0._ops.7.op.2.weight_orig
+cells.0._ops.7.op.3.weight
+cells.0._ops.7.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.0._ops.7.op.3.weight
+cells.0._ops.7.op.3.bias |        144        144       1.00x 100.00%
+cells.1.preprocess0.op.1.weight_orig
+cells.1.preprocess0.op.1.weight_orig |      62208      81648       0.76x 131.25%
+ignorecells.1.preprocess0.op.1.weight_orig
+cells.1.preprocess0.op.2.weight
+cells.1.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.1.preprocess0.op.2.weight
+cells.1.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+cells.1.preprocess1.op.1.weight_orig
+cells.1.preprocess1.op.1.weight_orig |      82944     108864       0.76x 131.25%
+ignorecells.1.preprocess1.op.1.weight_orig
+cells.1.preprocess1.op.2.weight
+cells.1.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.1.preprocess1.op.2.weight
+cells.1.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+cells.1._ops.0.op.1.weight_orig
+cells.1._ops.0.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.1._ops.0.op.1.weight_orig
+cells.1._ops.0.op.2.weight_orig
+cells.1._ops.0.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.0.op.2.weight_orig
+cells.1._ops.0.op.3.weight
+cells.1._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.0.op.3.weight
+cells.1._ops.0.op.3.bias |        144        144       1.00x 100.00%
+cells.1._ops.0.op.5.weight_orig
+cells.1._ops.0.op.5.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.1._ops.0.op.5.weight_orig
+cells.1._ops.0.op.6.weight_orig
+cells.1._ops.0.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.0.op.6.weight_orig
+cells.1._ops.0.op.7.weight
+cells.1._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.0.op.7.weight
+cells.1._ops.0.op.7.bias |        144        144       1.00x 100.00%
+cells.1._ops.1.op.1.weight_orig
+cells.1._ops.1.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.1._ops.1.op.1.weight_orig
+cells.1._ops.1.op.2.weight_orig
+cells.1._ops.1.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.1.op.2.weight_orig
+cells.1._ops.1.op.3.weight
+cells.1._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.1.op.3.weight
+cells.1._ops.1.op.3.bias |        144        144       1.00x 100.00%
+cells.1._ops.1.op.5.weight_orig
+cells.1._ops.1.op.5.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.1._ops.1.op.5.weight_orig
+cells.1._ops.1.op.6.weight_orig
+cells.1._ops.1.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.1.op.6.weight_orig
+cells.1._ops.1.op.7.weight
+cells.1._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.1.op.7.weight
+cells.1._ops.1.op.7.bias |        144        144       1.00x 100.00%
+cells.1._ops.2.op.1.weight_orig
+cells.1._ops.2.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.1._ops.2.op.1.weight_orig
+cells.1._ops.2.op.2.weight_orig
+cells.1._ops.2.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.2.op.2.weight_orig
+cells.1._ops.2.op.3.weight
+cells.1._ops.2.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.2.op.3.weight
+cells.1._ops.2.op.3.bias |        144        144       1.00x 100.00%
+cells.1._ops.3.op.1.weight_orig
+cells.1._ops.3.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.1._ops.3.op.1.weight_orig
+cells.1._ops.3.op.2.weight_orig
+cells.1._ops.3.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.3.op.2.weight_orig
+cells.1._ops.3.op.3.weight
+cells.1._ops.3.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.3.op.3.weight
+cells.1._ops.3.op.3.bias |        144        144       1.00x 100.00%
+cells.1._ops.4.op.1.weight_orig
+cells.1._ops.4.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.1._ops.4.op.1.weight_orig
+cells.1._ops.4.op.2.weight_orig
+cells.1._ops.4.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.4.op.2.weight_orig
+cells.1._ops.4.op.3.weight
+cells.1._ops.4.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.4.op.3.weight
+cells.1._ops.4.op.3.bias |        144        144       1.00x 100.00%
+cells.1._ops.4.op.5.weight_orig
+cells.1._ops.4.op.5.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.1._ops.4.op.5.weight_orig
+cells.1._ops.4.op.6.weight_orig
+cells.1._ops.4.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.4.op.6.weight_orig
+cells.1._ops.4.op.7.weight
+cells.1._ops.4.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.4.op.7.weight
+cells.1._ops.4.op.7.bias |        144        144       1.00x 100.00%
+cells.1._ops.5.op.1.weight_orig
+cells.1._ops.5.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.1._ops.5.op.1.weight_orig
+cells.1._ops.5.op.2.weight_orig
+cells.1._ops.5.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.5.op.2.weight_orig
+cells.1._ops.5.op.3.weight
+cells.1._ops.5.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.5.op.3.weight
+cells.1._ops.5.op.3.bias |        144        144       1.00x 100.00%
+cells.1._ops.5.op.5.weight_orig
+cells.1._ops.5.op.5.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.1._ops.5.op.5.weight_orig
+cells.1._ops.5.op.6.weight_orig
+cells.1._ops.5.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.5.op.6.weight_orig
+cells.1._ops.5.op.7.weight
+cells.1._ops.5.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.5.op.7.weight
+cells.1._ops.5.op.7.bias |        144        144       1.00x 100.00%
+cells.1._ops.6.op.1.weight_orig
+cells.1._ops.6.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.1._ops.6.op.1.weight_orig
+cells.1._ops.6.op.2.weight_orig
+cells.1._ops.6.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.6.op.2.weight_orig
+cells.1._ops.6.op.3.weight
+cells.1._ops.6.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.6.op.3.weight
+cells.1._ops.6.op.3.bias |        144        144       1.00x 100.00%
+cells.1._ops.7.op.1.weight_orig
+cells.1._ops.7.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.1._ops.7.op.1.weight_orig
+cells.1._ops.7.op.2.weight_orig
+cells.1._ops.7.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.1._ops.7.op.2.weight_orig
+cells.1._ops.7.op.3.weight
+cells.1._ops.7.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.1._ops.7.op.3.weight
+cells.1._ops.7.op.3.bias |        144        144       1.00x 100.00%
+cells.2.preprocess0.op.1.weight_orig
+cells.2.preprocess0.op.1.weight_orig |      82944     108864       0.76x 131.25%
+ignorecells.2.preprocess0.op.1.weight_orig
+cells.2.preprocess0.op.2.weight
+cells.2.preprocess0.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.2.preprocess0.op.2.weight
+cells.2.preprocess0.op.2.bias |        144        144       1.00x 100.00%
+cells.2.preprocess1.op.1.weight_orig
+cells.2.preprocess1.op.1.weight_orig |      82944     108864       0.76x 131.25%
+ignorecells.2.preprocess1.op.1.weight_orig
+cells.2.preprocess1.op.2.weight
+cells.2.preprocess1.op.2.weight |        144        144       1.00x 100.00%
+ignorecells.2.preprocess1.op.2.weight
+cells.2.preprocess1.op.2.bias |        144        144       1.00x 100.00%
+cells.2._ops.0.op.1.weight_orig
+cells.2._ops.0.op.1.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.2._ops.0.op.1.weight_orig
+cells.2._ops.0.op.2.weight_orig
+cells.2._ops.0.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.2._ops.0.op.2.weight_orig
+cells.2._ops.0.op.3.weight
+cells.2._ops.0.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.0.op.3.weight
+cells.2._ops.0.op.3.bias |        144        144       1.00x 100.00%
+cells.2._ops.0.op.5.weight_orig
+cells.2._ops.0.op.5.weight_orig |       8064       5868       1.37x  72.77%
+ignorecells.2._ops.0.op.5.weight_orig
+cells.2._ops.0.op.6.weight_orig
+cells.2._ops.0.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.2._ops.0.op.6.weight_orig
+cells.2._ops.0.op.7.weight
+cells.2._ops.0.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.0.op.7.weight
+cells.2._ops.0.op.7.bias |        144        144       1.00x 100.00%
+cells.2._ops.1.op.1.weight_orig
+cells.2._ops.1.op.1.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.2._ops.1.op.1.weight_orig
+cells.2._ops.1.op.2.weight_orig
+cells.2._ops.1.op.2.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.2._ops.1.op.2.weight_orig
+cells.2._ops.1.op.3.weight
+cells.2._ops.1.op.3.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.1.op.3.weight
+cells.2._ops.1.op.3.bias |        144        144       1.00x 100.00%
+cells.2._ops.1.op.5.weight_orig
+cells.2._ops.1.op.5.weight_orig |       3168       2484       1.28x  78.41%
+ignorecells.2._ops.1.op.5.weight_orig
+cells.2._ops.1.op.6.weight_orig
+cells.2._ops.1.op.6.weight_orig |      20736      27216       0.76x 131.25%
+ignorecells.2._ops.1.op.6.weight_orig
+cells.2._ops.1.op.7.weight
+cells.2._ops.1.op.7.weight |        144        144       1.00x 100.00%
+ignorecells.2._ops.1.op.7.weight
+cells.2._ops.1.op.7.bias |        144        144       1.00x 100.00%

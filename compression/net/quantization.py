@@ -3,9 +3,9 @@ import torch
 from scipy.sparse import csc_matrix, csr_matrix
 from sklearn.cluster import KMeans
 from torch import nn
-
-from model import Cell
-from operations import ReLUConvBN
+from model import Cell, ReLUConvBN
+# from model import Cell
+# from operations import ReLUConvBN
 
 def apply_weight_sharing(model, bits=2):
     """
@@ -19,6 +19,7 @@ def apply_weight_sharing(model, bits=2):
                     dev = module.weight.device
                     weight = module.weight.data.cpu().numpy()
                     shape = weight.shape
+                    # print(shape)
                     result = weight.copy()
                     # flag = True
                     if len(shape) > 2:
@@ -26,9 +27,24 @@ def apply_weight_sharing(model, bits=2):
                             for j in range(shape[1]):
                                 wt = weight[i][j]
                                 mat = csr_matrix(wt) if wt.shape[0] < wt.shape[1] else csc_matrix(wt)
+                                nonzero = mat.count_nonzero()
+                                if nonzero <= 1:
+                                    # print("skipping...")
+                                    continue;
                                 min_ = min(mat.data)
                                 max_ = max(mat.data)
-                                space = np.linspace(min_, max_, num=2 ** bits)
+
+                                newbits = bits
+                                if nonzero > 16:
+                                    newbits = 4
+                                elif nonzero > 8:
+                                    newbits = 3
+                                elif nonzero > 4:
+                                    newbits = 2
+                                else:
+                                    newbits = 1
+
+                                space = np.linspace(min_, max_, num=2 ** newbits)
                                 kmeans = KMeans(n_clusters=len(space), init=space.reshape(-1, 1), n_init=1,
                                                 precompute_distances=True, algorithm="full")
                                 kmeans.fit(mat.data.reshape(-1, 1))
@@ -37,8 +53,9 @@ def apply_weight_sharing(model, bits=2):
                                 result[i][j] = mat.toarray()
 
                         module.weight.data = torch.from_numpy(result).to(dev)
+                        # print(newbits)
                 else:
-                    print(module)
+                    # print(module)
                     for cell_module in module.children():
                         if isinstance(cell_module, ReLUConvBN):
                             for ReLU_List in cell_module.children():
@@ -49,7 +66,7 @@ def apply_weight_sharing(model, bits=2):
                                         dev = ReLU_module.weight.device
                                         weight = ReLU_module.weight.data.cpu().numpy()
                                         shape = weight.shape
-                                        print(shape)
+                                        # print(shape)
                                         result = weight.copy()
                                         # if len(shape) > 2:
                                         #     for i in range(shape[0]):
@@ -78,16 +95,31 @@ def apply_weight_sharing(model, bits=2):
                                             dev = layer.weight.device
                                             weight = layer.weight.data.cpu().numpy()
                                             shape = weight.shape
-                                            print(shape)
+                                            # print(shape)
                                             result = weight.copy()
                                             if len(shape) > 2:
                                                 for i in range(shape[0]):
                                                     for j in range(shape[1]):
                                                         wt = weight[i][j]
                                                         mat = csr_matrix(wt) if wt.shape[0] < wt.shape[1] else csc_matrix(wt)
+                                                        nonzero = mat.count_nonzero()
+                                                        if nonzero <= 1:
+                                                            # print("skipping...")
+                                                            continue;
                                                         min_ = min(mat.data)
                                                         max_ = max(mat.data)
-                                                        space = np.linspace(min_, max_, num=2 ** (layer.kernel_size[0]-1))
+
+                                                        newbits = bits
+                                                        if nonzero > 16:
+                                                            newbits = 4
+                                                        elif nonzero > 8:
+                                                            newbits = 3
+                                                        elif nonzero > 4:
+                                                            newbits = 2
+                                                        else:
+                                                            newbits = 1
+
+                                                        space = np.linspace(min_, max_, num=2 ** newbits)
                                                         kmeans = KMeans(n_clusters=len(space), init=space.reshape(-1, 1),
                                                                         n_init=1,
                                                                         precompute_distances=True, algorithm="full")
@@ -97,3 +129,4 @@ def apply_weight_sharing(model, bits=2):
                                                         result[i][j] = mat.toarray()
 
                                                 layer.weight.data = torch.from_numpy(result).to(dev)
+                                                # print(newbits)
